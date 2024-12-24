@@ -1,0 +1,248 @@
+﻿@{
+    ViewData["Title"] = "User Management";
+    Layout = "_AdminLayout";
+
+    var members = (dynamic)ViewBag.Members;
+    var currentPage = (int?)ViewBag.CurrentPage ?? 1;
+    var totalPages = (int?)ViewBag.TotalPages ?? 1;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            margin-bottom: 50px;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+            .pagination a {
+                margin: 0 5px;
+                padding: 5px 10px;
+                text-decoration: none;
+                color: black;
+                border: 1px solid #dee2e6;
+                border-radius: 4px;
+            }
+
+                .pagination a.active {
+                    font-weight: bold;
+                    background-color: white;
+                    color: black;
+                    border-color: grey;
+                }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .btn-status {
+            background-color: gray;
+            color: white; /* Optional: ensures text color contrasts with gray background */
+        }
+
+            .btn-status:hover {
+                background-color: darkgray; /* Optional: changes background color on hover */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">User Management</h1>
+        <div class="table-container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var member in members)
+                    {
+                        <tr>
+                            <td>@member.Name</td>
+                            <td>@member.Surname</td>
+                            <td>@member.Email</td>
+                            <td>@member.Username</td>
+                            <td>
+                                @(member.IsActive == 1 ? "Active" : "Inactive")
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-status" data-username="@member.Username" data-isactive="@member.IsActive">
+                                    @(member.IsActive == 1 ? "Deactivate" : "Activate")
+                                </button>
+
+                                <button class="btn btn-primary btn-sm btn-edit" data-username="@member.Username">Edit</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            @if (currentPage > 1)
+            {
+                <a href="@Url.Action("UserManagement", new { page = currentPage - 1 })">Previous</a>
+            }
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <a href="@Url.Action("UserManagement", new { page = i })" class="@(i == currentPage ? "active" : "")">@i</a>
+            }
+            @if (currentPage < totalPages)
+            {
+                <a href="@Url.Action("UserManagement", new { page = currentPage + 1 })">Next</a>
+            }
+        </div>
+    </div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="editForm" method="post" action="@Url.Action("Edit", "Admin")">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="editUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="editUsername" name="Username" readonly />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="editName" name="Name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editSurname" class="form-label">Surname</label>
+                            <input type="text" class="form-control" id="editSurname" name="Surname" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editEmail" name="Email" required />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openEditModal(member) {
+            $('#editUsername').val(member.Username);
+            $('#editName').val(member.Name);
+            $('#editSurname').val(member.Surname);
+            $('#editEmail').val(member.Email);
+
+            $('#editModal').modal('show');
+        }
+
+        $('#editForm').submit(function (event) {
+            event.preventDefault();
+
+            const formData = $(this).serialize();
+
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        $('#editModal').modal('hide');
+                        location.reload();
+                    } else {
+                        alert('Kullanıcı güncellenirken hata oluştu: ' + response.message);
+                    }
+                },
+                error: function () {
+                    alert('Bir hata oluştu.');
+                }
+            });
+        });
+
+        $(document).on('click', '.btn-edit', function () {
+            var username = $(this).data('username');
+
+            $.ajax({
+                url: '@Url.Action("GetMemberByUsername", "Admin")',
+                type: 'GET',
+                data: { username: username },
+                success: function (data) {
+                    if (data) {
+                        $('#editUsername').val(data.username);
+                        $('#editName').val(data.name);
+                        $('#editSurname').val(data.surname);
+                        $('#editEmail').val(data.email);
+
+                        $('#editModal').modal('show');
+                    } else {
+                        alert('User not found.');
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while fetching user data.');
+                }
+            });
+        });
+
+        $(document).on('click', '.btn-status', function () {
+            var username = $(this).data('username');
+            var isActive = $(this).data('isactive');
+
+            $.ajax({
+                url: '@Url.Action("ToggleActiveStatus", "Admin")',
+                type: 'POST',
+                data: { username: username, IsActive: isActive },
+                success: function (response) {
+                    if (response.success) {
+                        location.reload();
+                    } else {
+                        alert('Error updating user status: ' + response.message);
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while updating user status.');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

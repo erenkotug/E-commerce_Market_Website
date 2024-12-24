@@ -1,0 +1,245 @@
+﻿@model List<NorthWindWeb_UI.ViewModels.ProductViewModel>
+@{
+    ViewData["Title"] = "Your Bag";
+    Layout = "_MemberLayout";
+    int i = 0;
+    decimal sum = 0;
+    bool isBagEmpty = !Model.Any();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bag</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        .body{
+            padding-bottom: 70px;
+        }
+        .btn-mine {
+            background-color: #c0c0c0;
+            border-color: #c0c0c0;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 75px;
+        }
+
+        .btn-miner {
+            background-color: black;
+            border-color: black;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            margin-left: 150px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 90px;
+            right: 0;
+            width: 500px;
+            height: 100%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            overflow-y: auto;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .margin-top-50 {
+            margin-top: 120px;
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 300px;
+        }
+
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-title, .card-text {
+            margin-bottom: 10px;
+        }
+
+        .card-footer {
+            margin-top: auto;
+        }
+
+        .margin-top-50 {
+            margin-top: 140px;
+        }
+
+        .w-100 {
+            margin-top: 20px;
+        }
+
+        .subtotal-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .subtotal-label {
+            text-align: left;
+        }
+
+        .subtotal-value {
+            text-align: right;
+        }
+
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+
+        .quantity-update{
+            border-radius: 5px;
+            border-color: grey
+        }
+    </style>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.quantity-update').on('click', function () {
+                var productId = $(this).data('productid');
+                var action = $(this).data('action');
+                var quantityInput = $('#quantity-' + productId);
+                var currentQuantity = parseInt(quantityInput.val());
+                var newQuantity = currentQuantity;
+
+                if (action === 'increase') {
+                    newQuantity++;
+                } else if (action === 'decrease') {
+                    newQuantity--;
+                }
+
+                if (newQuantity > 0) {
+                    quantityInput.val(newQuantity);
+                    updateQuantity(productId, newQuantity);
+                } else if (newQuantity === 0) {
+                    updateQuantity(productId, newQuantity);
+                }
+            });
+
+            function updateQuantity(productId, quantity) {
+                $.ajax({
+                    url: '@Url.Action("UpdateQuantity", "Bag")',
+                    type: 'POST',
+                    data: { productId: productId, quantity: quantity },
+                    success: function () {
+                        location.reload();
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    @if (Model != null)
+    {
+        <div class="sidebar">
+            @if (isBagEmpty)
+            {
+                
+            }
+            else
+            {
+                foreach (var product in Model)
+                {
+                    sum += (decimal)(product.UnitPrice * product.Quantity);
+                }
+                <div class="subtotal-container">
+                    <h2 style="font-family: 'Verdana';" class="subtotal-label">SUBTOTAL</h2>
+                    <h2 style="font-family: 'Verdana';" class="subtotal-value">@sum.ToString("F2")$</h2>
+                </div>
+                <form method="post" action="@Url.Action("Payment", "Payment")" class="remove-form">
+                    <button style="font-family: 'Verdana'; margin-top: 50px;" class="btn btn-miner">CHECKOUT</button>
+                </form>
+            }
+        </div>
+    }
+    <div class="container margin-top-50">
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                i++;
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        @{
+                            var imageSrc = GetImageSrc(product.Images);
+                        }
+                        <img class="card-img-top" src="@imageSrc" alt="@product.ProductName" />
+                        <div class="card-body">
+                            <h5 class="card-title">@product.ProductName</h5>
+                            <p class="card-text" style="text-align: center;">
+                                <button type="button" class="quantity-update" data-productid="@product.ProductID" data-action="decrease">-</button>
+                                <input style="max-width:50px; text-align: center;" type="text" id="quantity-@product.ProductID" value="@product.Quantity" readonly />
+                                <button type="button" class="quantity-update" data-productid="@product.ProductID" data-action="increase">+</button>
+                            </p>
+                            @{
+                                var total = product.UnitPrice * product.Quantity;
+                            }
+                            <p class="card-text">Price: @total?.ToString("F2")$</p>
+                            <form method="post" action="@Url.Action("RemoveFromBag", "Bag")" class="remove-form">
+                                <input type="hidden" name="productId" value="@product.ProductID" />
+                                <button class="btn btn-danger">Remove</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                if (i % 4 == 0)
+                {
+                    <div class="w-100"></div>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>
+
+
+@functions {
+    public string GetImageSrc(string hexImage)
+    {
+        if (string.IsNullOrEmpty(hexImage))
+        {
+            return "/image/white.png";
+        }
+
+        var base64String = GetBase64ImageString(hexImage);
+        return $"data:image/jpg;base64,{base64String}";
+    }
+
+    public byte[] HexStringToByteArray(string hex)
+    {
+        int numberOfBytes = hex.Length / 2;
+        byte[] bytes = new byte[numberOfBytes];
+        for (int i = 0; i < numberOfBytes; i++)
+        {
+            bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+        }
+        return bytes;
+    }
+
+    public string GetBase64ImageString(string hexImage)
+    {
+        byte[] imageBytes = HexStringToByteArray(hexImage);
+        return Convert.ToBase64String(imageBytes);
+    }
+}

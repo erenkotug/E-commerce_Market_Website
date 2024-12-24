@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\NorthWindWeb_UI.props" />
+</Project>

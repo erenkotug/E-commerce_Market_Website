@@ -1,0 +1,581 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\NorthWindWeb_UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\NorthWindWeb_UI.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\Login.css",
+      "PackagePath": "staticwebassets\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\css\\address.css",
+      "PackagePath": "staticwebassets\\css\\address.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\css\\login_signup.css",
+      "PackagePath": "staticwebassets\\css\\login_signup.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\css\\payment.css",
+      "PackagePath": "staticwebassets\\css\\payment.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\css\\paymentprocess.css",
+      "PackagePath": "staticwebassets\\css\\paymentprocess.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\fonts\\BodoniMT.ttf",
+      "PackagePath": "staticwebassets\\fonts\\BodoniMT.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\image\\about.jpg",
+      "PackagePath": "staticwebassets\\image\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\image\\back.jpg",
+      "PackagePath": "staticwebassets\\image\\back.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\image\\logo.ico",
+      "PackagePath": "staticwebassets\\image\\logo.ico"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\image\\logo.png",
+      "PackagePath": "staticwebassets\\image\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\image\\phone.png",
+      "PackagePath": "staticwebassets\\image\\phone.png"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\image\\user.jpg",
+      "PackagePath": "staticwebassets\\image\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\image\\white.png",
+      "PackagePath": "staticwebassets\\image\\white.png"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\ionicons.designerpack.zip",
+      "PackagePath": "staticwebassets\\ionicons.designerpack.zip"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\js\\payment.js",
+      "PackagePath": "staticwebassets\\js\\payment.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\mdi\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\mdi\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\mdi\\css\\materialdesignicons.min.css.map",
+      "PackagePath": "staticwebassets\\mdi\\css\\materialdesignicons.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\mdi\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\mdi\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\mdi\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\mdi\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\mdi\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\mdi\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\mdi\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\mdi\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Eren\\Desktop\\NorthWind\\NorthWindWeb_UI\\NorthWindWeb_UI\\wwwroot\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\wwwroot\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.NorthWindWeb_UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.NorthWindWeb_UI.props",
+      "PackagePath": "build\\NorthWindWeb_UI.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.NorthWindWeb_UI.props",
+      "PackagePath": "buildMultiTargeting\\NorthWindWeb_UI.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.NorthWindWeb_UI.props",
+      "PackagePath": "buildTransitive\\NorthWindWeb_UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

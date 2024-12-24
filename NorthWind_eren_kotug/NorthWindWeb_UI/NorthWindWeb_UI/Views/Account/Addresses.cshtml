@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Addresses";
+    if (User.Identity.IsAuthenticated)
+    {
+        Layout = "_MemberLayout";
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt|Source+Code+Pro:300,400,600">
+    <link rel="stylesheet" href="~/css/address.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+        function toggleEditForm() {
+            var form = document.getElementById('editForm');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container mt-4">
+        <form method="post" action="@Url.Action("AddAddress", "Account")">
+            <div class="form-group">
+                <input type="text" class="form-control" name="street" id="inputStreet" placeholder="Street Address">
+                <input type="text" class="form-control" name="apt" id="inputApt" placeholder="Apt, Suite, Building">
+                <input type="text" class="form-control" name="province" id="inputProvince" placeholder="Province">
+                <input type="text" class="form-control" name="city" id="inputCity" placeholder="City">
+                <input type="text" class="form-control" name="neighborhood" id="inputNeighborhood" placeholder="Neighborhood">
+                <input type="text" class="form-control" name="postcode" id="inputPostcode" placeholder="Postcode">
+                <input type="text" class="form-control" name="country" id="inputCountry" placeholder="Country">
+                <input type="tel" class="form-control" name="phone" id="inputPhone" placeholder="Phone Number">
+                <button style="font-family: 'Verdana'; margin-top: 10px;" class="btn btn-mine" type="submit">ADD ADDRESS</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <h2 style="font-family: 'Verdana'; transform: translate(920px, -480px);">SAVED DELIVERY ADDRESSES</h2>
+    </div>
+    @if (Model != null )
+    {
+        int key = -490;
+        @foreach (var address in Model)
+        {
+            key = key + 20;
+            <div style="transform: translate(800px, @($"{key}px"));" class="card">
+
+                <div class="card-body">
+                    <p>@address.Neighborhood @address.Apt @address.Street  </p>
+                    <p> @address.Province / @address.City  @address.Country @address.Postcode</p>
+                    <p>@address.Phone</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-miner" onclick="toggleEditForm()">Edit</button>
+                    <form asp-action="DeleteAddress" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@address.AddressID" />
+                        <button type="submit" class="btn btn-miner">Delete</button>
+                    </form>
+                </div>
+                <form id="editForm" method="post" action="@Url.Action("EditAddress", "Account")" enctype="multipart/form-data" style="display:none;">
+                    <div class="form-edit">
+                        <input type="hidden" name="AddressID" id="editAddressID" />
+                        <input type="text" class="form-control" name="Street" id="inputStreet" placeholder="Street Address">
+                        <input type="text" class="form-control" name="Apt" id="inputApt" placeholder="Apt, Suite, Building">
+                        <input type="text" class="form-control" name="Province" id="inputProvince" placeholder="Province">
+                        <input type="text" class="form-control" name="City" id="inputCity" placeholder="City">
+                        <input type="text" class="form-control" name="Neighborhood" id="inputNeighborhood" placeholder="Neighborhood">
+                        <input type="text" class="form-control" name="Postcode" id="inputPostcode" placeholder="Postcode">
+                        <input type="text" class="form-control" name="Country" id="inputCountry" placeholder="Country">
+                        <input type="tel" class="form-control" name="Phone" id="inputPhone" placeholder="Phone Number">
+                        <button style="font-family: 'Verdana'; margin-top: 10px;" class="btn btn-mine" type="submit">SAVE ADDRESS</button>
+                    </div>
+                </form>
+            </div>
+            
+        }
+    }
+</body>
+</html>

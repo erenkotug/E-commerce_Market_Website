@@ -1,0 +1,498 @@
+﻿@{
+    ViewData["Title"] = "Common Dashboard";
+    Layout = "_AdminLayout";
+
+    var topMembers = ViewBag.TopMembers as IEnumerable<dynamic>;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Card Grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+            .grid-container .card:last-child {
+                margin-bottom: 30px;
+            }
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.5rem;
+            text-align: center;
+            height: 70vh;
+        }
+
+        .piechart1-container {
+            width: 70%;
+            margin: auto;
+        }
+
+        .barchart1-container {
+            width: 100%; 
+            max-width: 900px; 
+            padding: 4px; 
+        }
+
+        .barchart1-title {
+            position: absolute;
+            top: 50px;
+            left: 15%;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .linechart1-title {
+            position: absolute;
+            top: 50px;
+            left: 23%;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .linechart1-container {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        canvas {
+            display: block;
+            width: 100%;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px 0; 
+            margin-bottom: 100px;
+        }
+
+        h2 {
+            margin-bottom: 100px; 
+            font-size: 36px; 
+            font-weight: bold; 
+            text-align: center; 
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px; 
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold; 
+            top: 0;
+            z-index: 1;
+        }
+
+        table th, table td {
+            border-radius: 4px;
+        }
+
+        table thead {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+
+    @* Top 10 Best-Selling Products *@
+    <script> 
+        const chartData = @Html.Raw(Json.Serialize(ViewBag.ChartData));
+
+        if (Array.isArray(chartData)) {
+            const labels = chartData.map(item => item.productName.length > 12 ? item.productName.substring(0, 12) + '...' : item.productName);
+            const data = chartData.map(item => item.quantity);
+
+            const colors = [
+                'rgb(255, 99, 132)',    // Red
+                'rgb(255, 159, 64)',    // Orange
+                'rgb(255, 205, 86)',    // Yellow
+                'rgb(75, 192, 192)',    // Teal
+                'rgb(54, 162, 235)',    // Blue
+                'rgb(153, 102, 255)',   // Purple
+                'rgb(255, 99, 71)',     // Tomato Red
+                'rgb(255, 20, 147)',    // Deep Pink
+                'rgb(0, 255, 255)',     // Cyan
+                'rgb(50, 205, 50)',     // Lime Green
+                'rgb(255, 69, 0)',      // Red-Orange
+                'rgb(186, 85, 211)'     // Medium Orchid
+            ];
+
+            const backgroundColor = colors.slice(0, data.length);
+
+            const dataConfig = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Top 10 Best-Selling Products',
+                        data: data,
+                        backgroundColor: backgroundColor,
+                    }
+                ]
+            };
+
+            const config = {
+                type: 'pie',
+                data: dataConfig,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    size: 18 
+                                },
+                                generateLabels: (chart) => {
+                                    return chart.data.labels.map((label, i) => ({
+                                        text: label,
+                                        fillStyle: chart.data.datasets[0].backgroundColor[i]
+                                    }));
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: (tooltipItem) => {
+                                    const index = tooltipItem.dataIndex;
+                                    return chartData[index].productName + ': ' + tooltipItem.formattedValue;
+                                }
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Top 10 Best-Selling Products',
+                            font: {
+                                size: 36,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                }
+            };
+
+            window.onload = function () {
+                const ctx = document.getElementById('myPieChart').getContext('2d');
+                new Chart(ctx, config);
+            };
+        } else {
+            console.error('Chart data is not an array:', chartData);
+        }
+    </script>
+    @* Number of Products Sold by Category *@
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const categorySales = @Html.Raw(Json.Serialize(ViewBag.CategorySales));
+
+            if (Array.isArray(categorySales)) {
+                const labels = categorySales.map(item => item.categoryName);
+                const data = categorySales.map(item => item.totalQuantitySold);
+
+                const config = {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: data,
+                            backgroundColor: [
+                                'rgb(255, 99, 132)',
+                                'rgb(255, 159, 64)',
+                                'rgb(255, 205, 86)',
+                                'rgb(75, 192, 192)',
+                                'rgb(54, 162, 235)',
+                                'rgb(153, 102, 255)',
+                                'rgb(201, 203, 207)'
+                            ]
+                        }]
+                    },
+                    options: {
+                        plugins: {
+                            title: {
+                                display: false
+                            },
+                            legend: {
+                                display: false // Legend kısmını kaldırır
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: (tooltipItem) => {
+                                        const index = tooltipItem.dataIndex;
+                                        return `${labels[index]}: ${data[index]}`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    font: {
+                                        size: 18 // X eksenindeki etiketlerin font boyutu
+                                    }
+                                }
+                            },
+                            y: {
+                                ticks: {
+                                    font: {
+                                        size: 18 // Y eksenindeki etiketlerin font boyutu
+                                    }
+                                },
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                };
+
+                new Chart(ctx, config);
+            } else {
+                console.error('Category sales data is not an array:', categorySales);
+            }
+        });
+    </script>
+    @* Total Order Fee for 6 Months *@
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Pass the periods data from ViewBag to JavaScript
+            const periods = @Html.Raw(Json.Serialize(ViewBag.Periods));
+            const labels = ['01-06 / 20', '06-12 / 20', '01-06 / 21', '06 - 12 / 21', '01-06 / 22', '06-12 / 22', '01-06 / 23', '06 - 12 / 23', '01-06 / 24', '06-12 / 24'];
+            const dataValues = periods.map(p => p.totalOrderFee);
+
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'Total Order Fee',
+                    data: dataValues,
+                    fill: false,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1
+                }]
+            };
+
+            const config = {
+                type: 'line',
+                data: data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false  // Hide the legend
+                        }
+                    }
+                }
+            };
+
+            const ctx = document.getElementById('mylineChart').getContext('2d');
+            new Chart(ctx, config);
+        });
+
+    </script>
+    @* Total Shipment Quantity and Fees *@
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('mybarChart').getContext('2d');
+            const Utils = {
+                CHART_COLORS: {
+                    red: 'rgb(255, 99, 132)',
+                    blue: 'rgb(54, 162, 235)'
+                },
+            };
+            const periods = @Html.Raw(Json.Serialize(ViewBag.ShipperData));
+            const Labels = periods.map(p => p.companyName);
+            const ShipmentValues = periods.map(p => p.shipperCount);
+            const FeeValues = periods.map(p => p.totalPrice);
+
+            const config = {
+                type: 'bar',
+                data: {
+                    labels: Labels,
+                    datasets: [
+                        {
+                            label: 'Shipment Quantity',
+                            data: ShipmentValues,
+                            borderColor: Utils.CHART_COLORS.red,
+                            backgroundColor: Utils.CHART_COLORS.red,
+                        },
+                        {
+                            label: 'Shipment Fee',
+                            data: FeeValues,
+                            borderColor: Utils.CHART_COLORS.blue,
+                            backgroundColor: Utils.CHART_COLORS.blue,
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    size: 20  
+                                }
+                            }
+                        },
+                    },
+                    scales: {
+                        x: {
+                            ticks: {
+                                font: {
+                                    size: 18  
+                                }
+                            }
+                        },
+                        y: {
+                            ticks: {
+                                font: {
+                                    size: 18 
+                                }
+                            }
+                        }
+                    }
+                },
+            };
+            new Chart(ctx, config);
+        });
+    </script>
+    @* Top 5 Cities with Most Frequent Deliveries *@
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('myDoughnutChart').getContext('2d');
+
+            const periods = @Html.Raw(Json.Serialize(ViewBag.TopCities));
+            const Labels = periods.map(p => p.city);
+            const CityValues = periods.map(p => p.cityCount);
+            // Chart.js renk tanımları
+            const Utils = {
+                CHART_COLORS: {
+                    red: 'rgb(255, 99, 132)',
+                    orange: 'rgb(255, 159, 64)',
+                    yellow: 'rgb(255, 205, 86)',
+                    green: 'rgb(75, 192, 192)',
+                    blue: 'rgb(54, 162, 235)'
+                }
+            };
+
+            // Grafik verileri
+            const data = {
+                labels: Labels,
+                datasets: [
+                    {
+                        label: '',
+                        data: CityValues,
+                        backgroundColor: Object.values(Utils.CHART_COLORS),
+                    }
+                ]
+            };
+
+            const config = {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: ''
+                        }
+                    }
+                },
+            };
+
+            new Chart(ctx, config);
+        });
+    </script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card">
+            <div class="piechart1-container">
+                <canvas id="myPieChart"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <div class="barchart1-container">
+                <div class="barchart1-title">Number of Products Sold by Category</div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Top 5 Users with Most Order Fee</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Quantity of Products</th>
+                        <th>Order Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (topMembers != null && topMembers.Any())
+                    {
+                        foreach (var member in topMembers)
+                        {
+                            <tr>
+                                <td>@member.Username</td>
+                                <td>@member.OrderCount</td>
+                                <td>@member.TotalOrderFee</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3">No data available</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="card">
+            <div class="linechart1-container">
+                <div class="linechart1-title">Total Order Fee for 6 Months</div>
+                <canvas id="mylineChart"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <div class="barchart1-title">Total Shipment Quantity and Fees</div>
+            <canvas id="mybarChart"></canvas>
+        </div>
+        <div class="card">
+            <div style="font-size: 36px; font-weight: bold; top: 50px;">
+                Top 5 Cities with Most Frequent Deliveries
+            </div>
+            <div class="piechart1-container">
+                <canvas id="myDoughnutChart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

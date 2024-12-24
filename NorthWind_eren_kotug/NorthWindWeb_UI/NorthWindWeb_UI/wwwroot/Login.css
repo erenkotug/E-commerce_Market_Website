@@ -1,0 +1,30 @@
+﻿.bg-image {
+    background-image: url('/path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.login,
+.image {
+    min-height: 100vh;
+}
+
+.bg-light {
+    background-color: #f7f7f7 !important;
+}
+
+.form-control {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+
+.btn-custom {
+    background-color: #000000; /* Arka plan siyah */
+    color: #f7f7f7; /* Yazı beyaz */
+    border: none;
+}
+
+    .btn-custom:hover {
+        background-color: #000000; /* Hover sırasında daha açık bir siyah */
+    }

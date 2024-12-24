@@ -1,0 +1,345 @@
+﻿@{
+    ViewData["Title"] = "Product Management";
+    Layout = "_AdminLayout";
+
+    var products = (dynamic)ViewBag.Products;
+    var currentPage = (int?)ViewBag.CurrentPage ?? 1;
+    var totalPages = (int?)ViewBag.TotalPages ?? 1;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            margin-bottom: 50px;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+            .pagination a {
+                margin: 0 5px;
+                padding: 5px 10px;
+                text-decoration: none;
+                color: black;
+                border: 1px solid #dee2e6;
+                border-radius: 4px;
+            }
+
+                .pagination a.active {
+                    font-weight: bold;
+                    background-color: white;
+                    color: black;
+                    border-color: grey;
+                }
+
+        .btn-mine {
+            background-color: lightgrey;
+            border-color: lightgrey;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .btn-status {
+            background-color: gray;
+            color: white; /* Optional: ensures text color contrasts with gray background */
+        }
+
+            .btn-status:hover {
+                background-color: darkgray; /* Optional: changes background color on hover */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Product Management</h1>
+        <button class="btn-mine" id="addNewProductBtn">
+            ADD NEW PRODUCT
+        </button>
+        <div class="table-container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Unit Price</th>
+                        <th>Units In Stock</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in (IEnumerable<dynamic>)ViewBag.Products)
+                    {
+                        <tr>
+                            <td>@product.ProductName</td>
+                            <td>@product.CategoryName</td> 
+                            <td>@product.UnitPrice</td>
+                            <td>@product.UnitsInStock</td>
+                            <td>
+                                @(product.IsActive ? "Active" : "Inactive")
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-status" data-productid="@product.ProductID" data-isactive="@product.IsActive">
+                                    @(product.IsActive ? "Deactivate" : "Activate")
+                                </button>
+                                <button class="btn btn-primary btn-sm btn-edit" data-productid="@product.ProductID">Edit</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            @if (ViewBag.CurrentPage > 1)
+            {
+                <a href="@Url.Action("ProductManagement", new { page = ViewBag.CurrentPage - 1 })">Previous</a>
+            }
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <a href="@Url.Action("ProductManagement", new { page = i })" class="@(i == ViewBag.CurrentPage ? "active" : "")">@i</a>
+            }
+            @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+            {
+                <a href="@Url.Action("ProductManagement", new { page = ViewBag.CurrentPage + 1 })">Next</a>
+            }
+        </div>
+    </div>
+    <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="addProductForm" method="post" enctype="multipart/form-data" action="@Url.Action("AddProduct", "Admin")">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="addProductName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="addProductName" name="ProductName" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="addCategory" class="form-label">Category</label>
+                            <select class="form-control" id="addCategory" name="CategoryID" required>
+                                @foreach (var category in ViewBag.Categories as IEnumerable<SelectListItem>)
+                                {
+                                    <option value="@category.Value">@category.Text</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="addQuantityPerUnit" class="form-label">Quantity Per Unit</label>
+                            <input type="text" class="form-control" id="addQuantityPerUnit" name="QuantityPerUnit" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="addUnitPrice" class="form-label">Unit Price</label>
+                            <input type="number" step="0.01" class="form-control" id="addUnitPrice" name="UnitPrice" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="addUnitsInStock" class="form-label">Units In Stock</label>
+                            <input type="number" class="form-control" id="addUnitsInStock" name="UnitsInStock" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="addImage" class="form-label">Image</label>
+                            <input type="file" class="form-control" id="addImage" name="addImage" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="editForm" method="post" enctype="multipart/form-data" action="@Url.Action("EditProduct", "Admin")">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="editProductId" class="form-label">Product ID</label>
+                            <input type="text" class="form-control" id="editProductId" name="ProductID" readonly />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="editProductName" name="ProductName" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editCategory" class="form-label">Category</label>
+                            <select class="form-control" id="editCategory" name="CategoryID" required>
+                                @foreach (var category in ViewBag.Categories as IEnumerable<SelectListItem>)
+                                {
+                                    <option value="@category.Value">@category.Text</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editUnitPrice" class="form-label">Unit Price</label>
+                            <input type="number" step="0.01" class="form-control" id="editUnitPrice" name="UnitPrice" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editUnitsInStock" class="form-label">Units In Stock</label>
+                            <input type="number" class="form-control" id="editUnitsInStock" name="UnitsInStock" required />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#addNewProductBtn').click(function () {
+                $('#addProductForm')[0].reset(); 
+                $('#addProductForm').attr('action', '@Url.Action("AddProduct", "Admin")'); 
+                $('#addProductModal').modal('show'); 
+            });
+
+            $('#addProductForm').submit(function (event) {
+                event.preventDefault(); 
+
+                const formData = $(this).serialize();
+
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            $('#addProductModal').modal('hide');
+                            location.reload(); 
+                        } else {
+                            if (response.errors) {
+                                alert('Errors: ' + response.errors.join(', '));
+                            } else {
+                                alert('An error occurred while adding the product: ' + response.message);
+                            }
+                        }
+                    },
+                    error: function () {
+                        alert('An error occurred while adding the product.');
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.btn-status', function () {
+            var productId = $(this).data('productid');
+            var isActive = $(this).data('isactive'); 
+            
+            $.ajax({
+                url: '@Url.Action("ToggleActiveStatusProduct", "Admin")',
+                type: 'POST',
+                data: { productId: productId, isActive: isActive },
+                success: function (response) {
+                    if (response.success) {
+                        location.reload(); 
+                    } else {
+                        alert('Error updating product status: ' + response.message);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert('An error occurred while updating product status: ' + textStatus + ' - ' + errorThrown);
+                }
+            });
+        });
+
+        $(document).on('click', '.btn-edit', function () {
+            var productId = $(this).data('productid');
+
+            $.ajax({
+                url: '@Url.Action("GetProductById", "Admin")',
+                type: 'GET',
+                data: { id: productId },
+                success: function (data) {
+                    if (data) {
+                        $('#editProductId').val(data.productID);
+                        $('#editProductName').val(data.productName);
+                        $('#editCategory').val(data.categoryID); 
+                        $('#editUnitPrice').val(data.unitPrice);
+                        $('#editUnitsInStock').val(data.unitsInStock);
+
+                        $('#editModal').modal('show');
+                    } else {
+                        alert('Product not found.');
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while fetching product data.');
+                }
+            });
+        });
+
+        $('#editForm').submit(function (event) {
+            event.preventDefault();
+
+            const formData = $(this).serialize(); // Serialize the form data
+
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        $('#editModal').modal('hide');
+                        location.reload();
+                    } else {
+                        if (response.errors) {
+                            alert('Errors: ' + response.errors.join(', '));
+                        } else {
+                            alert('An error occurred while updating the product: ' + response.message);
+                        }
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while updating the product.');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

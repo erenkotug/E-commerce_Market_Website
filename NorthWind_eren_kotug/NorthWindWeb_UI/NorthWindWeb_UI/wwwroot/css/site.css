@@ -1,0 +1,85 @@
+/* ======- FOOTER -====== */
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #efefef;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%; /* Adjust height to reduce footer space */
+    margin: 0 auto; /* Center the footer */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer a {
+    display: inline-block;
+    margin: 0 8px; /* Reduced space between icons */
+}
+
+    footer a.github ion-icon, footer a.codepen ion-icon {
+        font-size: 2em; /* Reduced icon size */
+    }
+
+    footer a.github {
+        color: rgb(13,38,54);
+    }
+
+    footer a.codepen {
+        color: black;
+    }
+
+        footer a.github:hover, footer a.codepen:hover {
+            color: darkgray;
+        }
+
+footer .copyright {
+    margin-left: 15px; /* Reduced space between icons and text */
+    font-family: 'Rubik', sans-serif; /* Ensure 'Rubik' is applied */
+    letter-spacing: 0.5px; /* Reduced letter-spacing */
+    text-transform: uppercase;
+}
+
+    footer .copyright p {
+        margin: 0; /* Remove default margin */
+        font-size: 14px; /* Reduced font size */
+    }
+
+    footer .copyright span {
+        transition: background-color 1500ms ease, color 1500ms ease;
+        background-color: black;
+        color: white;
+    }
+
+        footer .copyright span:hover {
+            background-color: white;
+            color: black;
+        }
+
+/* Responsive Footer */
+footer.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    footer.pc {
+        display: none;
+    }
+
+    footer.mobile {
+        display: block;
+    }
+
+        footer.mobile .copyright p {
+            font-size: 12px; /* Further reduced font size for mobile */
+        }
+}

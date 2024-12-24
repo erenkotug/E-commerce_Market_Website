@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "SIGN IN/UP";
+}
+@model NorthWindWeb_UI.Models.LoginRegisterViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Up Form</title>
+    <link rel="stylesheet" href="~/css/login_signup.css" />
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Register Form -->
+        <div class="form-container sign-up-container">
+            <form id="registerForm"  asp-action="Login" method="post">
+                <h1>CREATE ACCOUNT</h1>
+                <br>
+                @if (ViewData.ModelState.ContainsKey(nameof(Model.RegisterViewModel.Username)) &&
+                ViewData.ModelState[nameof(Model.RegisterViewModel.Username)]?.Errors.Count > 0)
+                {
+                    <div class="alert alert-danger">
+                        @ViewData.ModelState[nameof(Model.RegisterViewModel.Username)].Errors[0].ErrorMessage
+                    </div>
+                }
+
+                @if (ViewData.ModelState.ContainsKey(nameof(Model.RegisterViewModel.Email)) &&
+                ViewData.ModelState[nameof(Model.RegisterViewModel.Email)]?.Errors.Count > 0)
+                {
+                    <div class="alert alert-danger">
+                        @ViewData.ModelState[nameof(Model.RegisterViewModel.Email)].Errors[0].ErrorMessage
+                    </div>
+                }
+                @if (ViewData.ModelState[""]?.Errors.Count > 0)
+                {
+                    <div class="alert alert-danger">
+                        @ViewData.ModelState[""].Errors[0].ErrorMessage
+                    </div>
+                }
+                <input id="inputUsernameRegister" type="username" placeholder="Username" asp-for="RegisterViewModel.Username" />
+                <input id="inputName" type="name" placeholder="Name" asp-for="RegisterViewModel.Name" />
+                <input id="inputSurname" type="surname" placeholder="Surname" asp-for="RegisterViewModel.Surname" />
+                <input id="inputEmail" type="email" placeholder="Email" asp-for="RegisterViewModel.Email" />
+                <input id="inputPasswordRegister" type="password" placeholder="Password" asp-for="RegisterViewModel.Password" />
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container sign-in-container">
+            <form id="loginForm"  asp-action="Login" method="post">
+                <h1>SIGN IN</h1>
+                <br>
+                @if (ViewData.ModelState[""]?.Errors.Count > 0)
+                {
+                    <div class="alert alert-danger">
+                        @ViewData.ModelState[""].Errors[0].ErrorMessage
+                    </div>
+                }
+                <input id="inputUsernameLogin" type="username" placeholder="Username" asp-for="LoginViewModel.Username" />
+                <input id="inputPasswordLogin" type="password" placeholder="Password" asp-for="LoginViewModel.Password" />
+                <button style="border: 1.5px solid #3d83f2 background-color #3d83f2" type="submit">
+                    Sign In
+                </button>
+            </form>
+        </div>
+
+
+        <!-- Overlay for toggling between forms -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts for form toggling and local storage -->
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const usernameInputLogin = document.getElementById('inputUsernameLogin');
+            const passwordInputLogin = document.getElementById('inputPasswordLogin');
+            const loginForm = document.getElementById('loginForm');
+
+            const storedUsername = localStorage.getItem('username');
+            const storedPassword = localStorage.getItem('password');
+
+            if (storedUsername) usernameInputLogin.value = storedUsername;
+            if (storedPassword) passwordInputLogin.value = storedPassword;
+
+            loginForm.addEventListener('submit', function () {
+                localStorage.setItem('username', usernameInputLogin.value);
+                localStorage.setItem('password', passwordInputLogin.value);
+            });
+        });
+    </script>
+
+</body>
+</html>

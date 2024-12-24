@@ -1,0 +1,785 @@
+16.08.2024 11:07:29: Stock Monitor Service is starting.
+16.08.2024 11:07:29: DoWork started.
+16.08.2024 11:07:30: Database connection opened for CheckStockLevels.
+16.08.2024 11:07:30: Executed query to check stock levels.
+16.08.2024 11:07:30: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:07:30: Executed query to check member updates.
+16.08.2024 11:07:30: Database connection opened for CheckProductUpdates.
+16.08.2024 11:07:30: Executed query to check product updates.
+16.08.2024 11:07:32: Email sent successfully at 16.08.2024 11:07:32 to erenkotughelp@gmail.com.
+16.08.2024 11:12:29: DoWork started.
+16.08.2024 11:12:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:12:29: Executed query to check stock levels.
+16.08.2024 11:12:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:12:29: Executed query to check member updates.
+16.08.2024 11:12:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:12:29: Executed query to check product updates.
+16.08.2024 11:12:32: Email sent successfully at 16.08.2024 11:12:32 to erenkotughelp@gmail.com.
+16.08.2024 11:17:29: DoWork started.
+16.08.2024 11:17:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:17:29: Executed query to check stock levels.
+16.08.2024 11:17:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:17:29: Executed query to check member updates.
+16.08.2024 11:17:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:17:29: Executed query to check product updates.
+16.08.2024 11:17:32: Email sent successfully at 16.08.2024 11:17:32 to erenkotughelp@gmail.com.
+16.08.2024 11:22:29: DoWork started.
+16.08.2024 11:22:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:22:29: Executed query to check stock levels.
+16.08.2024 11:22:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:22:29: Executed query to check member updates.
+16.08.2024 11:22:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:22:29: Executed query to check product updates.
+16.08.2024 11:22:32: Email sent successfully at 16.08.2024 11:22:32 to erenkotughelp@gmail.com.
+16.08.2024 11:27:29: DoWork started.
+16.08.2024 11:27:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:27:29: Executed query to check stock levels.
+16.08.2024 11:27:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:27:29: Executed query to check member updates.
+16.08.2024 11:27:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:27:29: Executed query to check product updates.
+16.08.2024 11:27:31: Email sent successfully at 16.08.2024 11:27:31 to erenkotughelp@gmail.com.
+16.08.2024 11:32:29: DoWork started.
+16.08.2024 11:32:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:32:29: Executed query to check stock levels.
+16.08.2024 11:32:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:32:29: Executed query to check member updates.
+16.08.2024 11:32:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:32:29: Executed query to check product updates.
+16.08.2024 11:32:32: Email sent successfully at 16.08.2024 11:32:32 to erenkotughelp@gmail.com.
+16.08.2024 11:37:29: DoWork started.
+16.08.2024 11:37:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:37:29: Executed query to check stock levels.
+16.08.2024 11:37:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:37:29: Executed query to check member updates.
+16.08.2024 11:37:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:37:29: Executed query to check product updates.
+16.08.2024 11:37:32: Email sent successfully at 16.08.2024 11:37:32 to erenkotughelp@gmail.com.
+16.08.2024 11:42:29: DoWork started.
+16.08.2024 11:42:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:42:29: Executed query to check stock levels.
+16.08.2024 11:42:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:42:29: Executed query to check member updates.
+16.08.2024 11:42:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:42:29: Executed query to check product updates.
+16.08.2024 11:42:32: Email sent successfully at 16.08.2024 11:42:32 to erenkotughelp@gmail.com.
+16.08.2024 11:47:29: DoWork started.
+16.08.2024 11:47:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:47:29: Executed query to check stock levels.
+16.08.2024 11:47:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:47:29: Executed query to check member updates.
+16.08.2024 11:47:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:47:29: Executed query to check product updates.
+16.08.2024 11:47:35: Email sent successfully at 16.08.2024 11:47:35 to erenkotughelp@gmail.com.
+16.08.2024 11:52:29: DoWork started.
+16.08.2024 11:52:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:52:29: Executed query to check stock levels.
+16.08.2024 11:52:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:52:29: Executed query to check member updates.
+16.08.2024 11:52:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:52:29: Executed query to check product updates.
+16.08.2024 11:52:32: Email sent successfully at 16.08.2024 11:52:32 to erenkotughelp@gmail.com.
+16.08.2024 11:57:29: DoWork started.
+16.08.2024 11:57:29: Database connection opened for CheckStockLevels.
+16.08.2024 11:57:29: Executed query to check stock levels.
+16.08.2024 11:57:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 11:57:29: Executed query to check member updates.
+16.08.2024 11:57:29: Database connection opened for CheckProductUpdates.
+16.08.2024 11:57:29: Executed query to check product updates.
+16.08.2024 11:57:32: Email sent successfully at 16.08.2024 11:57:32 to erenkotughelp@gmail.com.
+16.08.2024 12:02:29: DoWork started.
+16.08.2024 12:02:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:02:29: Executed query to check stock levels.
+16.08.2024 12:02:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:02:29: Executed query to check member updates.
+16.08.2024 12:02:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:02:29: Executed query to check product updates.
+16.08.2024 12:02:32: Email sent successfully at 16.08.2024 12:02:32 to erenkotughelp@gmail.com.
+16.08.2024 12:07:29: DoWork started.
+16.08.2024 12:07:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:07:29: Executed query to check stock levels.
+16.08.2024 12:07:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:07:29: Executed query to check member updates.
+16.08.2024 12:07:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:07:29: Executed query to check product updates.
+16.08.2024 12:07:33: Email sent successfully at 16.08.2024 12:07:33 to erenkotughelp@gmail.com.
+16.08.2024 12:12:29: DoWork started.
+16.08.2024 12:12:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:12:29: Executed query to check stock levels.
+16.08.2024 12:12:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:12:29: Executed query to check member updates.
+16.08.2024 12:12:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:12:29: Executed query to check product updates.
+16.08.2024 12:12:32: Email sent successfully at 16.08.2024 12:12:32 to erenkotughelp@gmail.com.
+16.08.2024 12:17:29: DoWork started.
+16.08.2024 12:17:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:17:29: Executed query to check stock levels.
+16.08.2024 12:17:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:17:29: Executed query to check member updates.
+16.08.2024 12:17:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:17:29: Executed query to check product updates.
+16.08.2024 12:17:33: Email sent successfully at 16.08.2024 12:17:33 to erenkotughelp@gmail.com.
+16.08.2024 12:22:29: DoWork started.
+16.08.2024 12:22:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:22:29: Executed query to check stock levels.
+16.08.2024 12:22:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:22:29: Executed query to check member updates.
+16.08.2024 12:22:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:22:29: Executed query to check product updates.
+16.08.2024 12:22:32: Email sent successfully at 16.08.2024 12:22:32 to erenkotughelp@gmail.com.
+16.08.2024 12:27:29: DoWork started.
+16.08.2024 12:27:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:27:29: Executed query to check stock levels.
+16.08.2024 12:27:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:27:29: Executed query to check member updates.
+16.08.2024 12:27:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:27:29: Executed query to check product updates.
+16.08.2024 12:27:32: Email sent successfully at 16.08.2024 12:27:32 to erenkotughelp@gmail.com.
+16.08.2024 12:32:29: DoWork started.
+16.08.2024 12:32:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:32:29: Executed query to check stock levels.
+16.08.2024 12:32:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:32:29: Executed query to check member updates.
+16.08.2024 12:32:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:32:29: Executed query to check product updates.
+16.08.2024 12:32:32: Email sent successfully at 16.08.2024 12:32:32 to erenkotughelp@gmail.com.
+16.08.2024 12:37:29: DoWork started.
+16.08.2024 12:37:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:37:29: Executed query to check stock levels.
+16.08.2024 12:37:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:37:29: Executed query to check member updates.
+16.08.2024 12:37:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:37:29: Executed query to check product updates.
+16.08.2024 12:37:32: Email sent successfully at 16.08.2024 12:37:32 to erenkotughelp@gmail.com.
+16.08.2024 12:42:29: DoWork started.
+16.08.2024 12:42:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:42:29: Executed query to check stock levels.
+16.08.2024 12:42:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:42:29: Executed query to check member updates.
+16.08.2024 12:42:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:42:29: Executed query to check product updates.
+16.08.2024 12:42:32: Email sent successfully at 16.08.2024 12:42:32 to erenkotughelp@gmail.com.
+16.08.2024 12:47:29: DoWork started.
+16.08.2024 12:47:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:47:29: Executed query to check stock levels.
+16.08.2024 12:47:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:47:29: Executed query to check member updates.
+16.08.2024 12:47:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:47:29: Executed query to check product updates.
+16.08.2024 12:47:32: Email sent successfully at 16.08.2024 12:47:32 to erenkotughelp@gmail.com.
+16.08.2024 12:52:29: DoWork started.
+16.08.2024 12:52:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:52:29: Executed query to check stock levels.
+16.08.2024 12:52:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:52:29: Executed query to check member updates.
+16.08.2024 12:52:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:52:29: Executed query to check product updates.
+16.08.2024 12:52:33: Email sent successfully at 16.08.2024 12:52:33 to erenkotughelp@gmail.com.
+16.08.2024 12:57:29: DoWork started.
+16.08.2024 12:57:29: Database connection opened for CheckStockLevels.
+16.08.2024 12:57:29: Executed query to check stock levels.
+16.08.2024 12:57:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 12:57:29: Executed query to check member updates.
+16.08.2024 12:57:29: Database connection opened for CheckProductUpdates.
+16.08.2024 12:57:29: Executed query to check product updates.
+16.08.2024 12:57:33: Email sent successfully at 16.08.2024 12:57:33 to erenkotughelp@gmail.com.
+16.08.2024 13:02:29: DoWork started.
+16.08.2024 13:02:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:02:29: Executed query to check stock levels.
+16.08.2024 13:02:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:02:29: Executed query to check member updates.
+16.08.2024 13:02:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:02:29: Executed query to check product updates.
+16.08.2024 13:02:32: Email sent successfully at 16.08.2024 13:02:32 to erenkotughelp@gmail.com.
+16.08.2024 13:07:29: DoWork started.
+16.08.2024 13:07:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:07:29: Executed query to check stock levels.
+16.08.2024 13:07:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:07:29: Executed query to check member updates.
+16.08.2024 13:07:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:07:29: Executed query to check product updates.
+16.08.2024 13:07:33: Email sent successfully at 16.08.2024 13:07:33 to erenkotughelp@gmail.com.
+16.08.2024 13:12:29: DoWork started.
+16.08.2024 13:12:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:12:29: Executed query to check stock levels.
+16.08.2024 13:12:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:12:29: Executed query to check member updates.
+16.08.2024 13:12:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:12:29: Executed query to check product updates.
+16.08.2024 13:12:32: Email sent successfully at 16.08.2024 13:12:32 to erenkotughelp@gmail.com.
+16.08.2024 13:17:29: DoWork started.
+16.08.2024 13:17:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:17:29: Executed query to check stock levels.
+16.08.2024 13:17:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:17:29: Executed query to check member updates.
+16.08.2024 13:17:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:17:29: Executed query to check product updates.
+16.08.2024 13:17:32: Email sent successfully at 16.08.2024 13:17:32 to erenkotughelp@gmail.com.
+16.08.2024 13:22:29: DoWork started.
+16.08.2024 13:22:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:22:29: Executed query to check stock levels.
+16.08.2024 13:22:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:22:29: Executed query to check member updates.
+16.08.2024 13:22:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:22:29: Executed query to check product updates.
+16.08.2024 13:22:32: Email sent successfully at 16.08.2024 13:22:32 to erenkotughelp@gmail.com.
+16.08.2024 13:27:29: DoWork started.
+16.08.2024 13:27:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:27:29: Executed query to check stock levels.
+16.08.2024 13:27:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:27:29: Executed query to check member updates.
+16.08.2024 13:27:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:27:29: Executed query to check product updates.
+16.08.2024 13:27:31: Email sent successfully at 16.08.2024 13:27:31 to erenkotughelp@gmail.com.
+16.08.2024 13:32:29: DoWork started.
+16.08.2024 13:32:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:32:29: Executed query to check stock levels.
+16.08.2024 13:32:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:32:29: Executed query to check member updates.
+16.08.2024 13:32:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:32:29: Executed query to check product updates.
+16.08.2024 13:32:31: Email sent successfully at 16.08.2024 13:32:31 to erenkotughelp@gmail.com.
+16.08.2024 13:37:29: DoWork started.
+16.08.2024 13:37:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:37:29: Executed query to check stock levels.
+16.08.2024 13:37:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:37:29: Executed query to check member updates.
+16.08.2024 13:37:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:37:29: Executed query to check product updates.
+16.08.2024 13:37:31: Email sent successfully at 16.08.2024 13:37:31 to erenkotughelp@gmail.com.
+16.08.2024 13:42:29: DoWork started.
+16.08.2024 13:42:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:42:29: Executed query to check stock levels.
+16.08.2024 13:42:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:42:29: Executed query to check member updates.
+16.08.2024 13:42:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:42:29: Executed query to check product updates.
+16.08.2024 13:42:31: Email sent successfully at 16.08.2024 13:42:31 to erenkotughelp@gmail.com.
+16.08.2024 13:47:29: DoWork started.
+16.08.2024 13:47:33: Database connection opened for CheckStockLevels.
+16.08.2024 13:47:33: Executed query to check stock levels.
+16.08.2024 13:47:33: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:47:33: Executed query to check member updates.
+16.08.2024 13:47:33: Database connection opened for CheckProductUpdates.
+16.08.2024 13:47:33: Executed query to check product updates.
+16.08.2024 13:47:36: Email sent successfully at 16.08.2024 13:47:36 to erenkotughelp@gmail.com.
+16.08.2024 13:52:29: DoWork started.
+16.08.2024 13:52:29: Database connection opened for CheckStockLevels.
+16.08.2024 13:52:29: Executed query to check stock levels.
+16.08.2024 13:52:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:52:29: Executed query to check member updates.
+16.08.2024 13:52:29: Database connection opened for CheckProductUpdates.
+16.08.2024 13:52:29: Executed query to check product updates.
+16.08.2024 13:52:31: Email sent successfully at 16.08.2024 13:52:31 to erenkotughelp@gmail.com.
+16.08.2024 13:57:29: DoWork started.
+16.08.2024 13:57:32: Database connection opened for CheckStockLevels.
+16.08.2024 13:57:33: Executed query to check stock levels.
+16.08.2024 13:57:33: Database connection opened for CheckMemberUpdates.
+16.08.2024 13:57:34: Executed query to check member updates.
+16.08.2024 13:57:34: Database connection opened for CheckProductUpdates.
+16.08.2024 13:57:34: Executed query to check product updates.
+16.08.2024 13:57:36: Email sent successfully at 16.08.2024 13:57:36 to erenkotughelp@gmail.com.
+16.08.2024 14:02:29: DoWork started.
+16.08.2024 14:02:29: Database connection opened for CheckStockLevels.
+16.08.2024 14:02:29: Executed query to check stock levels.
+16.08.2024 14:02:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:02:30: Executed query to check member updates.
+16.08.2024 14:02:30: Database connection opened for CheckProductUpdates.
+16.08.2024 14:02:30: Executed query to check product updates.
+16.08.2024 14:02:31: Email sent successfully at 16.08.2024 14:02:31 to erenkotughelp@gmail.com.
+16.08.2024 14:07:29: DoWork started.
+16.08.2024 14:07:30: Database connection opened for CheckStockLevels.
+16.08.2024 14:07:30: Executed query to check stock levels.
+16.08.2024 14:07:30: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:07:30: Executed query to check member updates.
+16.08.2024 14:07:30: Database connection opened for CheckProductUpdates.
+16.08.2024 14:07:30: Executed query to check product updates.
+16.08.2024 14:07:32: Email sent successfully at 16.08.2024 14:07:32 to erenkotughelp@gmail.com.
+16.08.2024 14:12:29: DoWork started.
+16.08.2024 14:12:30: Database connection opened for CheckStockLevels.
+16.08.2024 14:12:31: Executed query to check stock levels.
+16.08.2024 14:12:31: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:12:31: Executed query to check member updates.
+16.08.2024 14:12:31: Database connection opened for CheckProductUpdates.
+16.08.2024 14:12:31: Executed query to check product updates.
+16.08.2024 14:12:33: Email sent successfully at 16.08.2024 14:12:33 to erenkotughelp@gmail.com.
+16.08.2024 14:17:29: DoWork started.
+16.08.2024 14:17:29: Database connection opened for CheckStockLevels.
+16.08.2024 14:17:29: Executed query to check stock levels.
+16.08.2024 14:17:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:17:29: Executed query to check member updates.
+16.08.2024 14:17:29: Database connection opened for CheckProductUpdates.
+16.08.2024 14:17:29: Executed query to check product updates.
+16.08.2024 14:17:31: Email sent successfully at 16.08.2024 14:17:31 to erenkotughelp@gmail.com.
+16.08.2024 14:22:29: DoWork started.
+16.08.2024 14:22:29: Database connection opened for CheckStockLevels.
+16.08.2024 14:22:29: Executed query to check stock levels.
+16.08.2024 14:22:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:22:29: Executed query to check member updates.
+16.08.2024 14:22:29: Database connection opened for CheckProductUpdates.
+16.08.2024 14:22:29: Executed query to check product updates.
+16.08.2024 14:22:31: Email sent successfully at 16.08.2024 14:22:31 to erenkotughelp@gmail.com.
+16.08.2024 14:27:29: DoWork started.
+16.08.2024 14:27:30: Database connection opened for CheckStockLevels.
+16.08.2024 14:27:30: Executed query to check stock levels.
+16.08.2024 14:27:30: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:27:30: Executed query to check member updates.
+16.08.2024 14:27:30: Database connection opened for CheckProductUpdates.
+16.08.2024 14:27:30: Executed query to check product updates.
+16.08.2024 14:27:32: Email sent successfully at 16.08.2024 14:27:32 to erenkotughelp@gmail.com.
+16.08.2024 14:32:29: DoWork started.
+16.08.2024 14:32:30: Database connection opened for CheckStockLevels.
+16.08.2024 14:32:30: Executed query to check stock levels.
+16.08.2024 14:32:30: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:32:30: Executed query to check member updates.
+16.08.2024 14:32:30: Database connection opened for CheckProductUpdates.
+16.08.2024 14:32:30: Executed query to check product updates.
+16.08.2024 14:32:32: Email sent successfully at 16.08.2024 14:32:32 to erenkotughelp@gmail.com.
+16.08.2024 14:37:29: DoWork started.
+16.08.2024 14:37:29: Database connection opened for CheckStockLevels.
+16.08.2024 14:37:29: Executed query to check stock levels.
+16.08.2024 14:37:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:37:29: Executed query to check member updates.
+16.08.2024 14:37:29: Database connection opened for CheckProductUpdates.
+16.08.2024 14:37:29: Executed query to check product updates.
+16.08.2024 14:37:31: Email sent successfully at 16.08.2024 14:37:31 to erenkotughelp@gmail.com.
+16.08.2024 14:42:29: DoWork started.
+16.08.2024 14:42:30: Database connection opened for CheckStockLevels.
+16.08.2024 14:42:31: Executed query to check stock levels.
+16.08.2024 14:42:31: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:42:31: Executed query to check member updates.
+16.08.2024 14:42:31: Database connection opened for CheckProductUpdates.
+16.08.2024 14:42:31: Executed query to check product updates.
+16.08.2024 14:42:32: Email sent successfully at 16.08.2024 14:42:32 to erenkotughelp@gmail.com.
+16.08.2024 14:47:29: DoWork started.
+16.08.2024 14:47:29: Database connection opened for CheckStockLevels.
+16.08.2024 14:47:29: Executed query to check stock levels.
+16.08.2024 14:47:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:47:29: Executed query to check member updates.
+16.08.2024 14:47:29: Database connection opened for CheckProductUpdates.
+16.08.2024 14:47:29: Executed query to check product updates.
+16.08.2024 14:47:31: Email sent successfully at 16.08.2024 14:47:31 to erenkotughelp@gmail.com.
+16.08.2024 14:52:29: DoWork started.
+16.08.2024 14:52:29: Database connection opened for CheckStockLevels.
+16.08.2024 14:52:29: Executed query to check stock levels.
+16.08.2024 14:52:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:52:29: Executed query to check member updates.
+16.08.2024 14:52:29: Database connection opened for CheckProductUpdates.
+16.08.2024 14:52:29: Executed query to check product updates.
+16.08.2024 14:52:31: Email sent successfully at 16.08.2024 14:52:31 to erenkotughelp@gmail.com.
+16.08.2024 14:57:29: DoWork started.
+16.08.2024 14:57:29: Database connection opened for CheckStockLevels.
+16.08.2024 14:57:29: Executed query to check stock levels.
+16.08.2024 14:57:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 14:57:29: Executed query to check member updates.
+16.08.2024 14:57:29: Database connection opened for CheckProductUpdates.
+16.08.2024 14:57:29: Executed query to check product updates.
+16.08.2024 14:57:31: Email sent successfully at 16.08.2024 14:57:31 to erenkotughelp@gmail.com.
+16.08.2024 15:02:29: DoWork started.
+16.08.2024 15:02:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:02:29: Executed query to check stock levels.
+16.08.2024 15:02:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:02:29: Executed query to check member updates.
+16.08.2024 15:02:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:02:29: Executed query to check product updates.
+16.08.2024 15:02:31: Email sent successfully at 16.08.2024 15:02:31 to erenkotughelp@gmail.com.
+16.08.2024 15:07:29: DoWork started.
+16.08.2024 15:07:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:07:29: Executed query to check stock levels.
+16.08.2024 15:07:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:07:29: Executed query to check member updates.
+16.08.2024 15:07:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:07:29: Executed query to check product updates.
+16.08.2024 15:07:31: Email sent successfully at 16.08.2024 15:07:31 to erenkotughelp@gmail.com.
+16.08.2024 15:12:29: DoWork started.
+16.08.2024 15:12:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:12:29: Executed query to check stock levels.
+16.08.2024 15:12:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:12:29: Executed query to check member updates.
+16.08.2024 15:12:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:12:29: Executed query to check product updates.
+16.08.2024 15:12:31: Email sent successfully at 16.08.2024 15:12:31 to erenkotughelp@gmail.com.
+16.08.2024 15:17:29: DoWork started.
+16.08.2024 15:17:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:17:29: Executed query to check stock levels.
+16.08.2024 15:17:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:17:29: Executed query to check member updates.
+16.08.2024 15:17:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:17:29: Executed query to check product updates.
+16.08.2024 15:17:31: Email sent successfully at 16.08.2024 15:17:31 to erenkotughelp@gmail.com.
+16.08.2024 15:22:29: DoWork started.
+16.08.2024 15:22:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:22:29: Executed query to check stock levels.
+16.08.2024 15:22:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:22:29: Executed query to check member updates.
+16.08.2024 15:22:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:22:29: Executed query to check product updates.
+16.08.2024 15:22:31: Email sent successfully at 16.08.2024 15:22:31 to erenkotughelp@gmail.com.
+16.08.2024 15:27:29: DoWork started.
+16.08.2024 15:27:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:27:29: Executed query to check stock levels.
+16.08.2024 15:27:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:27:29: Executed query to check member updates.
+16.08.2024 15:27:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:27:29: Executed query to check product updates.
+16.08.2024 15:27:31: Email sent successfully at 16.08.2024 15:27:31 to erenkotughelp@gmail.com.
+16.08.2024 15:32:29: DoWork started.
+16.08.2024 15:32:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:32:29: Executed query to check stock levels.
+16.08.2024 15:32:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:32:29: Executed query to check member updates.
+16.08.2024 15:32:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:32:29: Executed query to check product updates.
+16.08.2024 15:32:31: Email sent successfully at 16.08.2024 15:32:31 to erenkotughelp@gmail.com.
+16.08.2024 15:37:29: DoWork started.
+16.08.2024 15:37:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:37:29: Executed query to check stock levels.
+16.08.2024 15:37:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:37:29: Executed query to check member updates.
+16.08.2024 15:37:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:37:29: Executed query to check product updates.
+16.08.2024 15:37:31: Email sent successfully at 16.08.2024 15:37:31 to erenkotughelp@gmail.com.
+16.08.2024 15:42:29: DoWork started.
+16.08.2024 15:42:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:42:29: Executed query to check stock levels.
+16.08.2024 15:42:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:42:29: Executed query to check member updates.
+16.08.2024 15:42:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:42:29: Executed query to check product updates.
+16.08.2024 15:42:31: Email sent successfully at 16.08.2024 15:42:31 to erenkotughelp@gmail.com.
+16.08.2024 15:47:29: DoWork started.
+16.08.2024 15:47:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:47:29: Executed query to check stock levels.
+16.08.2024 15:47:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:47:29: Executed query to check member updates.
+16.08.2024 15:47:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:47:29: Executed query to check product updates.
+16.08.2024 15:47:31: Email sent successfully at 16.08.2024 15:47:31 to erenkotughelp@gmail.com.
+16.08.2024 15:52:29: DoWork started.
+16.08.2024 15:52:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:52:29: Executed query to check stock levels.
+16.08.2024 15:52:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:52:29: Executed query to check member updates.
+16.08.2024 15:52:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:52:29: Executed query to check product updates.
+16.08.2024 15:52:31: Email sent successfully at 16.08.2024 15:52:31 to erenkotughelp@gmail.com.
+16.08.2024 15:57:29: DoWork started.
+16.08.2024 15:57:29: Database connection opened for CheckStockLevels.
+16.08.2024 15:57:29: Executed query to check stock levels.
+16.08.2024 15:57:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 15:57:29: Executed query to check member updates.
+16.08.2024 15:57:29: Database connection opened for CheckProductUpdates.
+16.08.2024 15:57:29: Executed query to check product updates.
+16.08.2024 15:57:31: Email sent successfully at 16.08.2024 15:57:31 to erenkotughelp@gmail.com.
+16.08.2024 16:02:29: DoWork started.
+16.08.2024 16:02:29: Database connection opened for CheckStockLevels.
+16.08.2024 16:02:29: Executed query to check stock levels.
+16.08.2024 16:02:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:02:29: Executed query to check member updates.
+16.08.2024 16:02:29: Database connection opened for CheckProductUpdates.
+16.08.2024 16:02:29: Executed query to check product updates.
+16.08.2024 16:02:31: Email sent successfully at 16.08.2024 16:02:31 to erenkotughelp@gmail.com.
+16.08.2024 16:07:29: DoWork started.
+16.08.2024 16:07:31: Database connection opened for CheckStockLevels.
+16.08.2024 16:07:31: Executed query to check stock levels.
+16.08.2024 16:07:31: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:07:31: Executed query to check member updates.
+16.08.2024 16:07:31: Database connection opened for CheckProductUpdates.
+16.08.2024 16:07:31: Executed query to check product updates.
+16.08.2024 16:07:32: Email sent successfully at 16.08.2024 16:07:32 to erenkotughelp@gmail.com.
+16.08.2024 16:12:29: DoWork started.
+16.08.2024 16:12:29: Database connection opened for CheckStockLevels.
+16.08.2024 16:12:29: Executed query to check stock levels.
+16.08.2024 16:12:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:12:29: Executed query to check member updates.
+16.08.2024 16:12:29: Database connection opened for CheckProductUpdates.
+16.08.2024 16:12:29: Executed query to check product updates.
+16.08.2024 16:12:32: Email sent successfully at 16.08.2024 16:12:32 to erenkotughelp@gmail.com.
+16.08.2024 16:17:29: DoWork started.
+16.08.2024 16:17:29: Database connection opened for CheckStockLevels.
+16.08.2024 16:17:29: Executed query to check stock levels.
+16.08.2024 16:17:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:17:29: Executed query to check member updates.
+16.08.2024 16:17:29: Database connection opened for CheckProductUpdates.
+16.08.2024 16:17:29: Executed query to check product updates.
+16.08.2024 16:17:31: Email sent successfully at 16.08.2024 16:17:31 to erenkotughelp@gmail.com.
+16.08.2024 16:22:29: DoWork started.
+16.08.2024 16:22:30: Database connection opened for CheckStockLevels.
+16.08.2024 16:22:30: Executed query to check stock levels.
+16.08.2024 16:22:30: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:22:30: Executed query to check member updates.
+16.08.2024 16:22:30: Database connection opened for CheckProductUpdates.
+16.08.2024 16:22:30: Executed query to check product updates.
+16.08.2024 16:22:32: Email sent successfully at 16.08.2024 16:22:32 to erenkotughelp@gmail.com.
+16.08.2024 16:27:29: DoWork started.
+16.08.2024 16:27:31: Database connection opened for CheckStockLevels.
+16.08.2024 16:27:31: Executed query to check stock levels.
+16.08.2024 16:27:32: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:27:32: Executed query to check member updates.
+16.08.2024 16:27:32: Database connection opened for CheckProductUpdates.
+16.08.2024 16:27:32: Executed query to check product updates.
+16.08.2024 16:27:34: Email sent successfully at 16.08.2024 16:27:34 to erenkotughelp@gmail.com.
+16.08.2024 16:32:29: DoWork started.
+16.08.2024 16:32:29: Database connection opened for CheckStockLevels.
+16.08.2024 16:32:29: Executed query to check stock levels.
+16.08.2024 16:32:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:32:29: Executed query to check member updates.
+16.08.2024 16:32:29: Database connection opened for CheckProductUpdates.
+16.08.2024 16:32:29: Executed query to check product updates.
+16.08.2024 16:32:31: Email sent successfully at 16.08.2024 16:32:31 to erenkotughelp@gmail.com.
+16.08.2024 16:37:29: DoWork started.
+16.08.2024 16:37:32: Database connection opened for CheckStockLevels.
+16.08.2024 16:37:32: Executed query to check stock levels.
+16.08.2024 16:37:32: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:37:32: Executed query to check member updates.
+16.08.2024 16:37:32: Database connection opened for CheckProductUpdates.
+16.08.2024 16:37:32: Executed query to check product updates.
+16.08.2024 16:37:34: Email sent successfully at 16.08.2024 16:37:34 to erenkotughelp@gmail.com.
+16.08.2024 16:42:29: DoWork started.
+16.08.2024 16:42:29: Database connection opened for CheckStockLevels.
+16.08.2024 16:42:29: Executed query to check stock levels.
+16.08.2024 16:42:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:42:29: Executed query to check member updates.
+16.08.2024 16:42:29: Database connection opened for CheckProductUpdates.
+16.08.2024 16:42:29: Executed query to check product updates.
+16.08.2024 16:42:31: Email sent successfully at 16.08.2024 16:42:31 to erenkotughelp@gmail.com.
+16.08.2024 16:47:29: DoWork started.
+16.08.2024 16:47:30: Database connection opened for CheckStockLevels.
+16.08.2024 16:47:31: Executed query to check stock levels.
+16.08.2024 16:47:31: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:47:31: Executed query to check member updates.
+16.08.2024 16:47:31: Database connection opened for CheckProductUpdates.
+16.08.2024 16:47:31: Executed query to check product updates.
+16.08.2024 16:47:32: Email sent successfully at 16.08.2024 16:47:32 to erenkotughelp@gmail.com.
+16.08.2024 16:52:29: DoWork started.
+16.08.2024 16:52:29: Database connection opened for CheckStockLevels.
+16.08.2024 16:52:29: Executed query to check stock levels.
+16.08.2024 16:52:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:52:29: Executed query to check member updates.
+16.08.2024 16:52:29: Database connection opened for CheckProductUpdates.
+16.08.2024 16:52:29: Executed query to check product updates.
+16.08.2024 16:52:31: Email sent successfully at 16.08.2024 16:52:31 to erenkotughelp@gmail.com.
+16.08.2024 16:57:29: DoWork started.
+16.08.2024 16:57:29: Database connection opened for CheckStockLevels.
+16.08.2024 16:57:29: Executed query to check stock levels.
+16.08.2024 16:57:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 16:57:29: Executed query to check member updates.
+16.08.2024 16:57:29: Database connection opened for CheckProductUpdates.
+16.08.2024 16:57:29: Executed query to check product updates.
+16.08.2024 16:57:31: Email sent successfully at 16.08.2024 16:57:31 to erenkotughelp@gmail.com.
+16.08.2024 17:02:29: DoWork started.
+16.08.2024 17:02:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:02:29: Executed query to check stock levels.
+16.08.2024 17:02:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:02:29: Executed query to check member updates.
+16.08.2024 17:02:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:02:29: Executed query to check product updates.
+16.08.2024 17:02:31: Email sent successfully at 16.08.2024 17:02:31 to erenkotughelp@gmail.com.
+16.08.2024 17:07:29: DoWork started.
+16.08.2024 17:07:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:07:29: Executed query to check stock levels.
+16.08.2024 17:07:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:07:29: Executed query to check member updates.
+16.08.2024 17:07:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:07:29: Executed query to check product updates.
+16.08.2024 17:07:31: Email sent successfully at 16.08.2024 17:07:31 to erenkotughelp@gmail.com.
+16.08.2024 17:12:29: DoWork started.
+16.08.2024 17:12:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:12:29: Executed query to check stock levels.
+16.08.2024 17:12:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:12:29: Executed query to check member updates.
+16.08.2024 17:12:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:12:29: Executed query to check product updates.
+16.08.2024 17:12:31: Email sent successfully at 16.08.2024 17:12:31 to erenkotughelp@gmail.com.
+16.08.2024 17:17:29: DoWork started.
+16.08.2024 17:17:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:17:29: Executed query to check stock levels.
+16.08.2024 17:17:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:17:29: Executed query to check member updates.
+16.08.2024 17:17:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:17:29: Executed query to check product updates.
+16.08.2024 17:17:31: Email sent successfully at 16.08.2024 17:17:31 to erenkotughelp@gmail.com.
+16.08.2024 17:22:29: DoWork started.
+16.08.2024 17:22:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:22:29: Executed query to check stock levels.
+16.08.2024 17:22:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:22:29: Executed query to check member updates.
+16.08.2024 17:22:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:22:29: Executed query to check product updates.
+16.08.2024 17:22:31: Email sent successfully at 16.08.2024 17:22:31 to erenkotughelp@gmail.com.
+16.08.2024 17:27:29: DoWork started.
+16.08.2024 17:27:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:27:29: Executed query to check stock levels.
+16.08.2024 17:27:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:27:29: Executed query to check member updates.
+16.08.2024 17:27:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:27:29: Executed query to check product updates.
+16.08.2024 17:27:31: Email sent successfully at 16.08.2024 17:27:31 to erenkotughelp@gmail.com.
+16.08.2024 17:32:29: DoWork started.
+16.08.2024 17:32:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:32:29: Executed query to check stock levels.
+16.08.2024 17:32:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:32:29: Executed query to check member updates.
+16.08.2024 17:32:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:32:29: Executed query to check product updates.
+16.08.2024 17:32:31: Email sent successfully at 16.08.2024 17:32:31 to erenkotughelp@gmail.com.
+16.08.2024 17:37:29: DoWork started.
+16.08.2024 17:37:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:37:29: Executed query to check stock levels.
+16.08.2024 17:37:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:37:29: Executed query to check member updates.
+16.08.2024 17:37:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:37:29: Executed query to check product updates.
+16.08.2024 17:37:31: Email sent successfully at 16.08.2024 17:37:31 to erenkotughelp@gmail.com.
+16.08.2024 17:42:29: DoWork started.
+16.08.2024 17:42:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:42:29: Executed query to check stock levels.
+16.08.2024 17:42:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:42:29: Executed query to check member updates.
+16.08.2024 17:42:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:42:29: Executed query to check product updates.
+16.08.2024 17:42:31: Email sent successfully at 16.08.2024 17:42:31 to erenkotughelp@gmail.com.
+16.08.2024 17:47:29: DoWork started.
+16.08.2024 17:47:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:47:29: Executed query to check stock levels.
+16.08.2024 17:47:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:47:29: Executed query to check member updates.
+16.08.2024 17:47:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:47:29: Executed query to check product updates.
+16.08.2024 17:47:31: Email sent successfully at 16.08.2024 17:47:31 to erenkotughelp@gmail.com.
+16.08.2024 17:52:29: DoWork started.
+16.08.2024 17:52:29: Database connection opened for CheckStockLevels.
+16.08.2024 17:52:29: Executed query to check stock levels.
+16.08.2024 17:52:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:52:29: Executed query to check member updates.
+16.08.2024 17:52:29: Database connection opened for CheckProductUpdates.
+16.08.2024 17:52:29: Executed query to check product updates.
+16.08.2024 17:52:32: Email sent successfully at 16.08.2024 17:52:32 to erenkotughelp@gmail.com.
+16.08.2024 17:57:29: DoWork started.
+16.08.2024 17:57:32: Database connection opened for CheckStockLevels.
+16.08.2024 17:57:32: Executed query to check stock levels.
+16.08.2024 17:57:32: Database connection opened for CheckMemberUpdates.
+16.08.2024 17:57:32: Executed query to check member updates.
+16.08.2024 17:57:32: Database connection opened for CheckProductUpdates.
+16.08.2024 17:57:32: Executed query to check product updates.
+16.08.2024 17:57:34: Email sent successfully at 16.08.2024 17:57:34 to erenkotughelp@gmail.com.
+16.08.2024 20:15:29: DoWork started.
+16.08.2024 20:15:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:15:29: Executed query to check stock levels.
+16.08.2024 20:15:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:15:29: Executed query to check member updates.
+16.08.2024 20:15:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:15:29: Executed query to check product updates.
+16.08.2024 20:15:30: Email sent successfully at 16.08.2024 20:15:30 to erenkotughelp@gmail.com.
+16.08.2024 20:20:29: DoWork started.
+16.08.2024 20:20:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:20:29: Executed query to check stock levels.
+16.08.2024 20:20:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:20:29: Executed query to check member updates.
+16.08.2024 20:20:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:20:29: Executed query to check product updates.
+16.08.2024 20:20:30: Email sent successfully at 16.08.2024 20:20:30 to erenkotughelp@gmail.com.
+16.08.2024 20:25:29: DoWork started.
+16.08.2024 20:25:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:25:29: Executed query to check stock levels.
+16.08.2024 20:25:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:25:29: Executed query to check member updates.
+16.08.2024 20:25:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:25:29: Executed query to check product updates.
+16.08.2024 20:25:30: Email sent successfully at 16.08.2024 20:25:30 to erenkotughelp@gmail.com.
+16.08.2024 20:30:29: DoWork started.
+16.08.2024 20:30:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:30:29: Executed query to check stock levels.
+16.08.2024 20:30:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:30:29: Executed query to check member updates.
+16.08.2024 20:30:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:30:29: Executed query to check product updates.
+16.08.2024 20:30:30: Email sent successfully at 16.08.2024 20:30:30 to erenkotughelp@gmail.com.
+16.08.2024 20:35:29: DoWork started.
+16.08.2024 20:35:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:35:29: Executed query to check stock levels.
+16.08.2024 20:35:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:35:29: Executed query to check member updates.
+16.08.2024 20:35:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:35:29: Executed query to check product updates.
+16.08.2024 20:35:30: Email sent successfully at 16.08.2024 20:35:30 to erenkotughelp@gmail.com.
+16.08.2024 20:40:29: DoWork started.
+16.08.2024 20:40:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:40:29: Executed query to check stock levels.
+16.08.2024 20:40:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:40:29: Executed query to check member updates.
+16.08.2024 20:40:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:40:29: Executed query to check product updates.
+16.08.2024 20:40:30: Email sent successfully at 16.08.2024 20:40:30 to erenkotughelp@gmail.com.
+16.08.2024 20:45:29: DoWork started.
+16.08.2024 20:45:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:45:29: Executed query to check stock levels.
+16.08.2024 20:45:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:45:29: Executed query to check member updates.
+16.08.2024 20:45:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:45:29: Executed query to check product updates.
+16.08.2024 20:45:30: Email sent successfully at 16.08.2024 20:45:30 to erenkotughelp@gmail.com.
+16.08.2024 20:50:29: DoWork started.
+16.08.2024 20:50:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:50:29: Executed query to check stock levels.
+16.08.2024 20:50:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:50:29: Executed query to check member updates.
+16.08.2024 20:50:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:50:29: Executed query to check product updates.
+16.08.2024 20:50:30: Email sent successfully at 16.08.2024 20:50:30 to erenkotughelp@gmail.com.
+16.08.2024 20:55:29: DoWork started.
+16.08.2024 20:55:29: Database connection opened for CheckStockLevels.
+16.08.2024 20:55:29: Executed query to check stock levels.
+16.08.2024 20:55:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 20:55:29: Executed query to check member updates.
+16.08.2024 20:55:29: Database connection opened for CheckProductUpdates.
+16.08.2024 20:55:29: Executed query to check product updates.
+16.08.2024 20:55:31: Email sent successfully at 16.08.2024 20:55:31 to erenkotughelp@gmail.com.
+16.08.2024 21:00:29: DoWork started.
+16.08.2024 21:00:29: Database connection opened for CheckStockLevels.
+16.08.2024 21:00:29: Executed query to check stock levels.
+16.08.2024 21:00:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 21:00:29: Executed query to check member updates.
+16.08.2024 21:00:29: Database connection opened for CheckProductUpdates.
+16.08.2024 21:00:29: Executed query to check product updates.
+16.08.2024 21:00:30: Email sent successfully at 16.08.2024 21:00:30 to erenkotughelp@gmail.com.
+16.08.2024 21:05:29: DoWork started.
+16.08.2024 21:05:29: Database connection opened for CheckStockLevels.
+16.08.2024 21:05:29: Executed query to check stock levels.
+16.08.2024 21:05:29: Database connection opened for CheckMemberUpdates.
+16.08.2024 21:05:29: Executed query to check member updates.
+16.08.2024 21:05:29: Database connection opened for CheckProductUpdates.
+16.08.2024 21:05:29: Executed query to check product updates.
+16.08.2024 21:05:30: Email sent successfully at 16.08.2024 21:05:30 to erenkotughelp@gmail.com.
+16.08.2024 23:13:16: DoWork started.
+16.08.2024 23:13:16: Database connection opened for CheckStockLevels.
+16.08.2024 23:13:16: Executed query to check stock levels.
+16.08.2024 23:13:16: Database connection opened for CheckMemberUpdates.
+16.08.2024 23:13:16: Executed query to check member updates.
+16.08.2024 23:13:16: Database connection opened for CheckProductUpdates.
+16.08.2024 23:13:16: Executed query to check product updates.
+16.08.2024 23:19:15: Email sent successfully at 16.08.2024 23:19:15 to erenkotughelp@gmail.com.
+17.08.2024 02:01:52: DoWork started.
+17.08.2024 02:01:52: Database connection opened for CheckStockLevels.
+17.08.2024 02:01:52: Executed query to check stock levels.
+17.08.2024 02:01:52: Database connection opened for CheckMemberUpdates.
+17.08.2024 02:01:52: Executed query to check member updates.
+17.08.2024 02:01:52: Database connection opened for CheckProductUpdates.
+17.08.2024 02:01:52: Executed query to check product updates.
+17.08.2024 02:01:53: Email sent successfully at 17.08.2024 02:01:53 to erenkotughelp@gmail.com.
+17.08.2024 02:06:52: DoWork started.
+17.08.2024 02:06:52: Database connection opened for CheckStockLevels.
+17.08.2024 02:06:52: Executed query to check stock levels.
+17.08.2024 02:06:52: Database connection opened for CheckMemberUpdates.
+17.08.2024 02:06:52: Executed query to check member updates.
+17.08.2024 02:06:52: Database connection opened for CheckProductUpdates.
+17.08.2024 02:06:52: Executed query to check product updates.
+17.08.2024 02:06:53: Email sent successfully at 17.08.2024 02:06:53 to erenkotughelp@gmail.com.
+17.08.2024 06:36:36: DoWork started.
+17.08.2024 06:36:36: Database connection opened for CheckStockLevels.
+17.08.2024 06:36:36: Executed query to check stock levels.
+17.08.2024 06:36:36: Database connection opened for CheckMemberUpdates.
+17.08.2024 06:36:36: Executed query to check member updates.
+17.08.2024 06:36:36: Database connection opened for CheckProductUpdates.
+17.08.2024 06:36:36: Executed query to check product updates.
+17.08.2024 06:39:40: Error sending email: Failure sending mail.

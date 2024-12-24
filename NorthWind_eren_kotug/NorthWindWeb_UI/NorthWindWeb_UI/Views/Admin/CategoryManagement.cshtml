@@ -1,0 +1,264 @@
+﻿@{
+    ViewData["Title"] = "Category Management";
+    Layout = "_AdminLayout";
+
+    var categories = (dynamic)ViewBag.Categories;
+    var currentPage = (int?)ViewBag.CurrentPage ?? 1;
+    var totalPages = (int?)ViewBag.TotalPages ?? 1;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            margin-bottom: 50px;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+            .pagination a {
+                margin: 0 5px;
+                padding: 5px 10px;
+                text-decoration: none;
+                color: black;
+                border: 1px solid #dee2e6;
+                border-radius: 4px;
+            }
+
+                .pagination a.active {
+                    font-weight: bold;
+                    background-color: white;
+                    color: black;
+                    border-color: grey;
+                }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .btn-mine {
+            background-color: lightgrey;
+            border-color: lightgrey;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Category Management</h1>
+        <button class="btn-mine" id="addNewCategoryBtn">
+            ADD NEW CATEGORY
+        </button>
+        <div class="table-container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Category Name</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var category in categories)
+                    {
+                        <tr>
+                            <td>@category.CategoryName</td>
+                            <td>@category.Description</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm btn-edit" data-categoryid="@category.CategoryID">Edit</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination">
+            @if (currentPage > 1)
+            {
+                <a href="@Url.Action("CategoryManagement", new { page = currentPage - 1 })">Previous</a>
+            }
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <a href="@Url.Action("CategoryManagement", new { page = i })" class="@(i == currentPage ? "active" : "")">@i</a>
+            }
+            @if (currentPage < totalPages)
+            {
+                <a href="@Url.Action("CategoryManagement", new { page = currentPage + 1 })">Next</a>
+            }
+        </div>
+    </div>
+    <div class="modal fade" id="addCategoryModal" tabindex="-1" aria-labelledby="addCategoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addCategoryModalLabel">Add New Category</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="addCategoryForm" method="post" action="@Url.Action("AddCategory", "Admin")">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="addCategoryName" class="form-label">Category Name</label>
+                            <input type="text" class="form-control" id="addCategoryName" name="CategoryName" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="addDescription" class="form-label">Description</label>
+                            <textarea class="form-control" id="addDescription" name="Description" required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Category</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="editForm" method="post" action="@Url.Action("EditCategory", "Admin")">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="editCategoryID" class="form-label">Category ID</label>
+                            <input type="text" class="form-control" id="editCategoryID" name="CategoryID" readonly />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editCategoryName" class="form-label">Category Name</label>
+                            <input type="text" class="form-control" id="editCategoryName" name="CategoryName" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="editDescription" class="form-label">Description</label>
+                            <textarea class="form-control" id="editDescription" name="Description" required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#addNewCategoryBtn').click(function () {
+                $('#addCategoryForm')[0].reset();
+                $('#addCategoryForm').attr('action', '@Url.Action("AddCategory", "Admin")');
+                $('#addCategoryModal').modal('show');
+            });
+
+            $('#addCategoryForm').submit(function (event) {
+                event.preventDefault();
+
+                const formData = $(this).serialize();
+
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        if (response.success) {
+                            $('#addCategoryModal').modal('hide');
+                            location.reload();
+                        } else {
+                            if (response.errors) {
+                                alert('Errors: ' + response.errors.join(', '));
+                            } else {
+                                alert('An error occurred while adding the category: ' + response.message);
+                            }
+                        }
+                    },
+                    error: function () {
+                        alert('An error occurred while adding the product.');
+                    }
+                });
+            });
+        });
+
+        $(document).on('click', '.btn-edit', function () {
+            var categoryId = $(this).data('categoryid');
+
+            $.ajax({
+                url: '@Url.Action("GetCategoryById", "Admin")',
+                type: 'GET',
+                data: { id: categoryId },
+                success: function (data) {
+                    if (data) {
+                        $('#editCategoryID').val(data.categoryID);
+                        $('#editCategoryName').val(data.categoryName);
+                        $('#editDescription').val(data.description);
+
+                        $('#editModal').modal('show');
+                    } else {
+                        alert('Category not found.');
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while fetching category data.');
+                }
+            });
+        });
+
+        $('#editForm').submit(function (event) {
+            event.preventDefault();
+
+            const formData = $(this).serialize();
+
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        $('#editModal').modal('hide');
+                        location.reload();
+                    } else {
+                        alert('Error updating category: ' + response.message);
+                    }
+                },
+                error: function () {
+                    alert('An error occurred.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

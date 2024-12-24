@@ -1,0 +1,185 @@
+﻿ @model MyOrdersViewModel
+@{
+    Layout = "_MemberLayout";
+    ViewData["Title"] = "My Orders";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Default</title>
+    <style>
+        body{
+            padding-bottom: 70px;
+            margin-top: 150px;
+        }
+        .btn-order{
+            background-color: #c0c0c0;
+            border-color: #c0c0c0;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 24px;
+            color: black;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .btn-orderdetails {
+            background-color: #f8f8ff;
+            border-color: #f8f8ff;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function toggleOrderDetails(orderId) {
+            const details = document.getElementById(`order-details-${orderId}`);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+
+        function toggleDeliveryInfo(orderId) {
+            const deliveryInfo = document.getElementById(`delivery-date-${orderId}`);
+            if (deliveryInfo.style.display === "none") {
+                deliveryInfo.style.display = "block";
+            } else {
+                deliveryInfo.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 style="font-size: 44px;">MY ORDERS</h2>
+
+    @foreach (var order in Model.MemberOrders)
+    {
+        var currentDate = DateTime.Now;
+        var deliveryDate = order.DeliveryDate;
+        var daysUntilDelivery = (deliveryDate - currentDate).TotalDays;
+
+        string deliveryStatus;
+
+        if (deliveryDate < currentDate)
+        {
+            deliveryStatus = "Delivered";
+        }
+        else if (daysUntilDelivery <= 1)
+        {
+            deliveryStatus = "On the way";
+        }
+        else
+        {
+            deliveryStatus = "Preparing";
+        }
+
+
+        int sum = 2020510000 + order.OrderID;
+        <div style="margin-bottom: 20px; position: relative;">
+            <button class="btn-order" onclick="toggleOrderDetails(@sum)">
+                Order ID: @sum
+            </button>
+
+            <div id="order-details-@sum" style="display: none; margin-top: 20px;">
+                <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 20px;">
+                    <p style="font-size: 20px;"><strong>Status:</strong> @deliveryStatus</p>
+                    @foreach (var memberorder in Model.MemberOrderProducts)
+                    {
+                        if (memberorder.OrderID == order.OrderID)
+                        {
+
+                            @foreach (var product in Model.Products)
+                            {
+                                if (product.ProductID == memberorder.ProductID)
+                                {
+                                    
+                                    var imageSrc = GetImageSrc(product.Images);
+                                    var unitPrice = product.UnitPrice ?? 0; // Handle nullable decimal
+                                    var quantity = memberorder.Quantity; // Handle nullable int
+                                    var totalPrice = unitPrice * quantity;
+
+                                    <li style="border:none; padding: 10px; flex: 1 1 calc(100% - 20px); box-sizing: border-box; display: flex; gap: 10px;">
+                                        <img src="@imageSrc" alt="@product.ProductName" style="max-width: 200px; height: auto; display: block;" />
+                                        <div style="flex: 1; font-size: 20px;">
+                                            <strong>@product.ProductName</strong><br />
+                                            Quantity: @quantity<br />
+                                            Price: @unitPrice.ToString("C")<br />
+                                            Total: @totalPrice.ToString("C")
+                                        </div>
+                                    </li>
+                                }
+                            }
+                        }
+                    }
+                </ul>
+                <button class="btn-orderdetails" onclick="toggleDeliveryInfo(@sum)">
+                    Order Details
+                </button>
+
+                <div id="delivery-date-@sum" style="display: none; margin-top:15px;">
+                    <p><strong>Order Created Date:</strong> @order.OrderCreated</p>
+
+                    <p><strong>Delivery Date:</strong> @order.DeliveryDate</p>
+
+                    <p><strong>Total Order Fee:</strong> @order.OrderFee$</p>
+                    @foreach (var address in Model.Addresses)
+                    {
+                        if (order.AddressID == address.AddressID)
+                        {
+                            <p><strong>Address:</strong> @address.Neighborhood @address.Apt @address.Street</p>
+                            <p>@address.Province / @address.City @address.Country @address.Postcode</p>
+                            <p>@address.Phone</p>
+                        }
+                    }
+                    @foreach (var shipper in Model.Shippers)
+                    {
+                        if (order.ShipperID == shipper.ShipperID)
+                        {
+                            <p><strong>Shipper:</strong> @shipper.CompanyName (@shipper.ShipperPrice$)</p>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>
+
+@functions {
+    public string GetImageSrc(string hexImage)
+    {
+        if (string.IsNullOrEmpty(hexImage))
+        {
+            return "/image/white.png";
+        }
+
+        var base64String = GetBase64ImageString(hexImage);
+        return $"data:image/jpg;base64,{base64String}";
+    }
+
+    public byte[] HexStringToByteArray(string hex)
+    {
+        int numberOfBytes = hex.Length / 2;
+        byte[] bytes = new byte[numberOfBytes];
+        for (int i = 0; i < numberOfBytes; i++)
+        {
+            bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+        }
+        return bytes;
+    }
+
+    public string GetBase64ImageString(string hexImage)
+    {
+        byte[] imageBytes = HexStringToByteArray(hexImage);
+        return Convert.ToBase64String(imageBytes);
+    }
+}
+

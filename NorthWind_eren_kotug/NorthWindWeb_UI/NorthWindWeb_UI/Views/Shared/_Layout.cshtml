@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - NORTHWIND</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/image/logo.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        let shouldLogout = false;
+
+        function redirectToBag() {
+            window.location.href = '@Url.Action("Default", "Bag")';
+        }
+        function clearCookies() {
+            const cookies = document.cookie.split(";");
+
+            cookies.forEach(cookie => {
+                const [name] = cookie.split("=");
+                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+            });
+        }
+        function handleLogout() {
+            shouldLogout = true;
+            localStorage.clear();
+            navigator.sendBeacon('/Account/Logout');
+            window.location.href = '@Url.Action("Login", "Account")';
+            clearCookies();
+        }
+
+        window.addEventListener('beforeunload', function (e) {
+            if (shouldLogout) {
+                navigator.sendBeacon('/Account/Logout');
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#logoButton').on('click', function () {
+                window.location.href = '@Url.Action("homepage", "Home")';
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="fixed-header">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <img src="/image/logo.png" alt="EK" style="width:6%; cursor: pointer;" id="logoButton">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav justify-content-center w-100 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="homepage">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="default">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">SIGN IN/UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="pc">
+        <div class="footer-content">
+            <a href="https://github.com/erenkotug" class="github">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/erenkotug/" class="codepen">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <div class="copyright">
+                <p>Made by <span>EREN KÖTÜĞ</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <style>
+
+        .nav-link {
+            font-size: 24px; 
+        }
+
+        .fixed-header {
+            position: fixed;
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            z-index: 1000; 
+        }
+
+        .navbar-nav {
+            width: 10%;
+        }
+
+        .nav-item {
+            display: inline-block;
+        }
+    </style>
+    <script>
+        window.addEventListener('beforeunload', function (e) {
+            navigator.sendBeacon('/Account/Logout');
+        });
+    </script>
+</body>
+</html>

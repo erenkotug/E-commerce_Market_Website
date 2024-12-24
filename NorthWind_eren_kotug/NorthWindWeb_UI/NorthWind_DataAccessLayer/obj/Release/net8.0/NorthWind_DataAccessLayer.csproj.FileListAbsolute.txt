@@ -1,0 +1,14 @@
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\bin\Release\net8.0\NorthWind_DataAccessLayer.deps.json
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\bin\Release\net8.0\NorthWind_DataAccessLayer.runtimeconfig.json
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\bin\Release\net8.0\NorthWind_DataAccessLayer.dll
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\bin\Release\net8.0\NorthWind_DataAccessLayer.pdb
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\NorthWind_DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\NorthWind_DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\NorthWind_DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\NorthWind_DataAccessLayer.AssemblyInfo.cs
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\NorthWind_DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\NorthWind_DataAccessLayer.dll
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\refint\NorthWind_DataAccessLayer.dll
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\NorthWind_DataAccessLayer.pdb
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\NorthWind_DataAccessLayer.genruntimeconfig.cache
+C:\Users\Eren\Desktop\NorthWind\NorthWindWeb_UI\NorthWind_DataAccessLayer\obj\Release\net8.0\ref\NorthWind_DataAccessLayer.dll

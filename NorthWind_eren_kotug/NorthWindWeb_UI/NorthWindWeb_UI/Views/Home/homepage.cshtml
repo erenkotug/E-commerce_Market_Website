@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    if (User.Identity.IsAuthenticated)
+    {
+        Layout = "_MemberLayout";
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body, html {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 95%;
+            height: 95%;
+            background-image: url('/image/back.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #fff; 
+            text-align: center;
+            padding: 50px; 
+        }
+
+        .btn-about {
+            position: fixed;
+            top: 510px;
+            right: 340px;
+            z-index: 1;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff; 
+            padding: 5px 15px; 
+            border-radius: 10px;
+            font-size: 12px; 
+            text-align: center;
+            text-decoration: none; 
+            cursor: pointer;
+        }
+
+            .btn-about:hover {
+                background-color: transparent;
+                color: #fff;
+                border-color: #fff; 
+            }
+        .btn-products {
+            position: fixed;
+            bot: 510px;
+            left: 940px;
+            z-index: 1;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff; 
+            padding: 5px 15px; 
+            border-radius: 10px;
+            font-size: 16px; 
+            text-align: center;
+            text-decoration: none; 
+            cursor: pointer;
+        }
+
+            .btn-products:hover {
+                background-color: transparent;
+                color: #fff;
+                border-color: #fff; 
+            }
+        .display-4 {
+            font-size: 80px;
+            font-weight: bold; 
+            color: #fff;
+            text-align: right;
+        }
+
+        .display-3 {
+            font-size: 20px;
+            color: #fff;
+            text-align: right;
+        }
+
+        .margin-top-50 {
+            margin-top: 120px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const username = localStorage.getItem('username');
+            if (username === 'admin') {
+                window.location.href = '/Admin/CommonDashboard';
+            }
+        });
+    </script>
+</head>
+<body>
+    <div style="margin-top: 120px"class="background-image"></div>
+    <div class="content margin-top-50">
+        <h1 style="font-family: 'Bodoni MT'; margin-top: 100px;" class="display-4">Buy. Use. Appreciate.</h1>
+        <h4 style="font-family: 'Bodoni MT'; margin-top: 50px;" class="display-3">We are a company that serves all over the world with more than</h4>
+        <h4 style="font-family: 'Bodoni MT'" class="display-3">a hundred product types. We have achieved this with our</h4>
+        <h4 style="font-family: 'Bodoni MT'" class="display-3">Buy. Use. Appreciate. program and will continue to achieve this.</h4>
+        <a href="@Url.Action("about", "Home")" class="btn-about">Learn More>></a>
+        <h4 style="font-family: 'Bodoni MT'; margin-top: 300px; margin-right: 150px; font-size: 30px;" class="display-3">Start filling your bag before it's too late!!</h4>
+        <a href="@Url.Action("Default", "Products")" class="btn-products">All Products>></a>
+    </div>
+</body>
+</html>

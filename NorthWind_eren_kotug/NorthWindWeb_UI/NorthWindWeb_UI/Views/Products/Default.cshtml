@@ -1,0 +1,240 @@
+﻿@model IEnumerable<NorthWind_DataAccessLayer.Entities.Product>
+@{
+    ViewData["Title"] = "Products";
+    if (User.Identity.IsAuthenticated)
+    {
+        Layout = "_MemberLayout";
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body{
+            background-color: #f2f2f2;
+            padding-bottom: 70px;
+        }
+
+        .btn-mine {
+            background-color: #c0c0c0; /* Gri renk kodu */
+            border-color: #c0c0c0;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 75px;
+        }
+        .sidebar {
+            position: fixed;
+            top: 90px;
+            left: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            overflow-y: auto;
+        }
+
+        .content {
+            margin-left: 120px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 350px;
+        }
+
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-title, .card-text {
+            margin-bottom: 10px;
+        }
+
+        .card-footer {
+            margin-top: auto;
+        }
+
+        .margin-top-50 {
+            margin-top: 140px;
+        }
+
+        .w-100 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <form asp-controller="Products" asp-action="Default" method="get" id="filterForm">
+            <div class="form-group">
+                <label for="categories">Categories:</label>
+                <select class="form-control" id="categorySelect" name="category" onchange="storeFilter('category')">
+                    <option value="">Select All</option>
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        <option value="@category.CategoryID">@category.CategoryName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="priceRangeSelect">Shop by Price:</label>
+                <select class="form-control" id="priceRangeSelect" name="priceRange" onchange="storeFilter('priceRange')">
+                    <option value="">Reset Choice</option>
+                    <option value="0-20">$0 - $20</option>
+                    <option value="20-40">$20 - $40</option>
+                    <option value="40-60">$40 - $60</option>
+                    <option value="60-80">$60 - $80</option>
+                    <option value="80">$80+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sortSelect">Sort By:</label>
+                <select class="form-control" id="sortSelect" name="sort" onchange="storeFilter('sort')">
+                    <option value="">Reset Choice</option>
+                    <option value="High-Low">Price: High-Low</option>
+                    <option value="Low-High">Price: Low-High</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="stockSelect">Stock Status:</label>
+                <select class="form-control" id="stockSelect" name="stock" onchange="storeFilter('stock')">
+                    <option value="">Reset Choice</option>
+                    <option value="In">In Stock</option>
+                    <option value="Out">Out of Stock</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="container content margin-top-50">
+        @if (TempData["WarningMessage"] != null)
+        {
+            <div class="alert alert-warning">
+                @TempData["WarningMessage"]
+            </div>
+        }
+        <div class="row">
+            @for (int i = 0; i < Model.Count(); i++)
+            {
+                if (i % 4 == 0 && i != 0)
+                {
+                    <div class="w-100"></div>
+                }
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        @{
+                            var product = Model.ElementAt(i);
+                            var imageSrc = GetImageSrc(product.Images);
+                        }
+                        <img class="card-img-top" src="@imageSrc" alt="@product.ProductName" />
+                        <div class="card-body">
+                            <h5 class="card-title">@product.ProductName</h5>
+                            <h6> @product.QuantityPerUnit</h6>
+                            <p class="card-text">Price: @product.UnitPrice?.ToString("F2")$   </p>
+                            @if (product.UnitsInStock > 0)
+                            {
+                                <p class="card-text">Stock: @product.UnitsInStock?.ToString("F0")</p>
+                            }
+                            else
+                            {
+                                <p class="card-text">Out of stock</p>
+                            }
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-mine add-to-bag-btn"
+                                    data-product-id="@product.ProductID"
+                                    data-stock-status="@product.UnitsInStock">
+                                Add to Bag
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#categorySelect').val(localStorage.getItem('category') || '');
+            $('#priceRangeSelect').val(localStorage.getItem('priceRange') || '');
+            $('#sortSelect').val(localStorage.getItem('sort') || '');
+            $('#stockSelect').val(localStorage.getItem('stock') || '');
+
+            $('.add-to-bag-btn').on('click', function () {
+                var productId = $(this).data('product-id');
+                var stockStatus = $(this).data('stock-status');
+
+                if (stockStatus <= 0) {
+                    alert('This product is out of stock and cannot be added to the bag.');
+                    return;
+                }
+
+                $.ajax({
+                    url: '@Url.Action("AddToBag", "Bag")',
+                    type: 'POST',
+                    data: { productId: productId },
+                    success: function (response) {
+                      
+                    },
+                    error: function () {
+                        alert('An error occurred while adding the product to the bag.');
+                    }
+                });
+            });
+
+        });
+        function storeFilter(filterName) {
+            var filterValue = $('#' + filterName + 'Select').val();
+            localStorage.setItem(filterName, filterValue);
+            $('#filterForm').submit();
+        }
+    </script>
+
+</body>
+</html>
+
+@functions {
+    public string GetImageSrc(string hexImage)
+    {
+        if (string.IsNullOrEmpty(hexImage))
+        {
+            return "/image/white.png";
+        }
+
+        var base64String = GetBase64ImageString(hexImage);
+        return $"data:image/jpg;base64,{base64String}";
+    }
+
+    public byte[] HexStringToByteArray(string hex)
+    {
+        int numberOfBytes = hex.Length / 2;
+        byte[] bytes = new byte[numberOfBytes];
+        for (int i = 0; i < numberOfBytes; i++)
+        {
+            bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+        }
+        return bytes;
+    }
+
+    public string GetBase64ImageString(string hexImage)
+    {
+        byte[] imageBytes = HexStringToByteArray(hexImage);
+        return Convert.ToBase64String(imageBytes);
+    }
+}

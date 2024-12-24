@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+    if (User.Identity.IsAuthenticated)
+    {
+        Layout = "_MemberLayout";
+    }
+}
+<style>
+    .margin-top-50 {
+        margin-top: 120px;
+    }
+</style>
+<div class="full-screen-container margin-top-50">
+    <h1 style="position: absolute; top: 25%; left: 5%; transform: translateY(-50%); font-size: 12em; color: black; font-family: 'Bodoni MT';">ABOUT </h1>
+    <h1 style="position: absolute; top: 45%; left: 5%; transform: translateY(-50%); font-size: 12em; color: black; font-family: 'Bodoni MT';">US</h1>
+    <h3 style="position: absolute; top: 45%; left: 20%; transform: translateY(-50%); color: black; font-family: 'Bodoni MT'; width: 22%;">
+        Northwind is a company that serves as a practical example for database development and training. 
+        Specializing in the import and export of specialty foods and beverages, Northwind Traders operates on
+    </h3>
+    <h3 style="position: absolute; top: 75%; left: 6%; transform: translateY(-50%); color: black; font-family: 'Bodoni MT'; width: 36%;">
+        a global scale,connecting suppliers with customers across various regions. 
+        
+        Our company boasts a diverse product range, 
+        including gourmet foods, rare spices, and fine wines. We pride ourselves on providing exceptional service and high-quality products to our clients. 
+        With a dedicated team of professionals, we manage a robust network of suppliers and customers to ensure timely and efficient delivery of our goods.
+
+        Northwind is designed to showcase the intricacies of business operations, from order processing and inventory management to customer relationship management. 
+        Our goal is to offer a realistic and comprehensive example for those looking to understand and work with relational databases and business management systems.
+    </h3>   
+    <img src="~/image/about.jpg" style="margin-left: 40%; width: 75%; margin-top: 5%;" alt="team">
+</div>

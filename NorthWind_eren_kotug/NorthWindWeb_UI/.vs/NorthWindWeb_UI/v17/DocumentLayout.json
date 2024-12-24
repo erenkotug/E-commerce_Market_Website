@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89D6CB95-77AF-4AA9-8D92-05C3CDACD7A7}|NorthWind_DataAccessLayer\\NorthWind_DataAccessLayer.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwind_dataaccesslayer\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D6CB95-77AF-4AA9-8D92-05C3CDACD7A7}|NorthWind_DataAccessLayer\\NorthWind_DataAccessLayer.csproj|solutionrelative:northwind_dataaccesslayer\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\models\\loginregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\models\\loginregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\models\\contactviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\models\\contactviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\models\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\models\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D6CB95-77AF-4AA9-8D92-05C3CDACD7A7}|NorthWind_DataAccessLayer\\NorthWind_DataAccessLayer.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwind_dataaccesslayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D6CB95-77AF-4AA9-8D92-05C3CDACD7A7}|NorthWind_DataAccessLayer\\NorthWind_DataAccessLayer.csproj|solutionrelative:northwind_dataaccesslayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\controllers\\bagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\controllers\\bagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|c:\\users\\eren\\desktop\\northwind_eren_kotug\\northwindweb_ui\\northwindweb_ui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D559BB58-56EC-47DE-8C1F-4DFB142DF9D4}|NorthWindWeb_UI\\NorthWindWeb_UI.csproj|solutionrelative:northwindweb_ui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 358,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "NorthWindWeb_UI\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALsBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T13:28:04.022Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Models\\PaymentViewModel.cs",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\Models\\PaymentViewModel.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Models\\PaymentViewModel.cs",
+              "RelativeToolTip": "NorthWindWeb_UI\\Models\\PaymentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:42:51.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginRegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Models\\LoginRegisterViewModel.cs",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\Models\\LoginRegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Models\\LoginRegisterViewModel.cs",
+              "RelativeToolTip": "NorthWindWeb_UI\\Models\\LoginRegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:42:49.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Models\\ContactViewModel.cs",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\Models\\ContactViewModel.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Models\\ContactViewModel.cs",
+              "RelativeToolTip": "NorthWindWeb_UI\\Models\\ContactViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:42:45.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\appsettings.json",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\appsettings.json",
+              "RelativeToolTip": "NorthWindWeb_UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-19T12:12:53.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Program.cs",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\Program.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Program.cs",
+              "RelativeToolTip": "NorthWindWeb_UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:12:35.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BagController.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Controllers\\BagController.cs",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\Controllers\\BagController.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Controllers\\BagController.cs",
+              "RelativeToolTip": "NorthWindWeb_UI\\Controllers\\BagController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswCkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:55:48.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWind_DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "NorthWind_DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWind_DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "NorthWind_DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:54:51.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWind_DataAccessLayer\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "NorthWind_DataAccessLayer\\Entities\\Address.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWind_DataAccessLayer\\Entities\\Address.cs",
+              "RelativeToolTip": "NorthWind_DataAccessLayer\\Entities\\Address.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:54:43.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "NorthWindWeb_UI\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T19:55:38.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "NorthWindWeb_UI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\NorthWind_eren_kotug\\NorthWindWeb_UI\\NorthWindWeb_UI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "NorthWindWeb_UI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T07:36:31.149Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

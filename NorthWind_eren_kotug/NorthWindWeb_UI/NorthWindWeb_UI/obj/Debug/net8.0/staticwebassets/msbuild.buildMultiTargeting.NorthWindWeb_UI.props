@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NorthWindWeb_UI.props" />
+</Project>

@@ -1,0 +1,144 @@
+﻿@model NorthWind_DataAccessLayer.Entities.Member
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "_MemberLayout";
+
+    string userImageSrc = Model.UserImage != null
+        ? NorthWindWeb_UI.Controllers.AccountController.ImageHelper.ConvertHexToBase64(Model.UserImage)
+        : "~/image/user.jpg";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/login.css" />
+    <style>
+        .btn-mine {
+            background-color: #c0c0c0; /* Gri renk kodu */
+            border-color: #c0c0c0;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 75px;
+        }
+
+        .btn-update {
+            background-color: #6c757d; /* Gri renk kodu */
+            border-color: #6c757d;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .margin-top-50 {
+            margin-top: 220px;
+        }
+
+        .info-container {
+            font-size: 1.5rem;
+        }
+
+            .info-container h3 {
+                font-size: 2.5rem;
+            }
+
+            .info-container p {
+                margin-bottom: 1.5rem;
+            }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .user-image {
+            max-width: 500px; 
+            max-height: 500px; 
+            width: auto; 
+            height: auto;
+            margin-right: 20px; 
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .user-details {
+            flex: 1;
+        }
+    </style>
+    <script>
+        function toggleEditForm() {
+            var form = document.getElementById('editForm');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fluid margin-top-50">
+        <div class="row no-gutter">
+            <div class="col-md-0 d-none d-md-flex bg-image"></div>
+            <div class="col-md-12 bg-light mx-auto">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container info-container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-10 mx-auto">
+                                <div class="mb-4 user-info">
+                                    @if (Model.UserImage != null)
+                                    {
+                                        <img src="@userImageSrc" alt="User Image" class="user-image" />
+                                    }
+                                    else
+                                    {
+                                        <img src="~/image/user.jpg" alt="Default User Image" class="user-image" />
+                                    }
+                                    <div style="margin-left: 60px" class="user-details">
+                                        <p><strong>Username:</strong> @Model.Username</p>
+                                        <p><strong>Name:</strong> @Model.Name</p>
+                                        <p><strong>Surname:</strong> @Model.Surname</p>
+                                        <p><strong>Email:</strong> @Model.Email</p>
+                                        <button class="btn btn-mine" onclick="toggleEditForm()">Update Your Informations</button>
+                                    </div>
+                                </div>
+                                <form id="editForm" method="post" action="/Account/UpdateInformation" enctype="multipart/form-data" style="display:none;">
+                                    <div class="form-group">
+                                        <label for="Username">Username</label>
+                                        <input type="text" class="form-control" id="Username" name="Username" value="@Model.Username" readonly />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Name">Name</label>
+                                        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Surname">Surname</label>
+                                        <input type="text" class="form-control" id="Surname" name="Surname" value="@Model.Surname" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Password">Password</label>
+                                        <input type="password" class="form-control" id="Password" name="Password" value="@Model.Password" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Email">Email</label>
+                                        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="UserImage">Profile Picture</label>
+                                        <input type="file" class="form-control" id="UserImage" name="UserImage" />
+                                    </div>
+                                    <br />
+                                    <button type="submit" class="btn btn-update">Update</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
